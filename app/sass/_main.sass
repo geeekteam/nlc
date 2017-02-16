@@ -1,14 +1,113 @@
 html, body
+  font-family: "PT Sans Regular", sans-serif
   margin: 0
   height: 100%
 
-body
-  box-shadow: inset 0 0 500px
+h1, h2, h3, h4, h5, h6
+  font-family: "PT Sans Narrow Bold", sans-serif
+  font-weight: normal
 
-.logo
-  left: 50%
-  margin-left: -37.5px
-  margin-top: -39.5px
-  position: absolute
-  top: 50%
+strong, b
+  font-family: "PT Sans Bold", sans-serif
+  font-weight: normal
+
+*
+  box-sizing: border-box
+  padding: 0
+  margin: 0
+  font-weight: normal
+  line-height: 1em
+
+.container
+  max-width: 1140px
+  margin: 0 auto
+  width: 100%
+
+.header
+  margin-bottom: 20px
+
+.header__wrapper
+  margin-bottom: 15px
+
+.main-header
+  display: flex
+  justify-content: space-between
+  align-items: center
+
+.header__wrapper
+  padding-top: 15px
+
+.main-header__logo
+  flex-basis: 286px
+
+.logo__img
   font-size: 0
+  line-height: 0
+
+.main-header__contacts
+  text-align: center
+
+.main-header__phone
+  margin-bottom: 2px
+
+.main-header__phone-link
+  font-family: "PT Sans Bold", sans-serif
+  text-decoration: none
+  color: #000000
+  font-size: 30px
+
+.main-header__free-call
+  font-size: 14px
+
+.main-header__button
+  flex-basis: 286px
+
+.button
+  display: inline-flex
+  flex-wrap: wrap
+  min-height: 55px
+  font-family: "PT Sans Narrow Bold", serif
+  color: #FFFFFF
+  background: linear-gradient(to right, #f44b51, #ff5a60)
+  box-shadow: 0 2px 3px -1px #9a9a9a
+  border-top: 2px solid #ff8c90
+  border-radius: 3px
+  cursor: pointer
+  padding: 8px 30px
+  text-align: center
+
+.button_primary
+  font-size: 22px
+
+.banner-content__button
+  text-align: center
+
+.main-menu
+  display: flex
+  justify-content: space-between
+
+.main-menu__item
+  text-decoration: none
+  font-size: 18px
+  color: #333333
+  
+.main-banner-bg
+  background-image: url("../images/banner.png")
+  background-repeat: no-repeat
+  height: 100%
+
+.main-banner__content
+  padding: 70px 0
+  max-width: 650px
+  width: 100%
+
+.main-banner-content__title
+  font-family: "PT Sans Narrow Bold", serif
+  line-height: 1.2em
+  font-size: 55px
+  color: #333333
+
+.main-banner-content__subtitle
+  font-size: 26px
+  line-height: 1.3
+  padding: 35px 0
