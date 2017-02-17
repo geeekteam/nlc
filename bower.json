@@ -4,5 +4,7 @@
   "description": "Gulp project builder",
   "author": "qube.kz",
   "dependencies": {
+    "jquery": "^3.1.1",
+    "owl.carousel": "OwlCarousel2#^2.2.0"
   }
 }

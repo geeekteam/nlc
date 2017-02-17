@@ -9,21 +9,85 @@
 </style>
 
 {% block content %}
-    <div class="main-banner-bg">
-        <div class="container">
-            <div class="main-banner">
-                <div class="main-banner__content">
-                    <h1 class="main-banner-content__title">Все виды диагностики и лечения в Южной Корее пластическая хирургия</h1>
-                    <div class="main-banner-content__subtitle">Столкнулись с медицинской проблемой или просто решили проверить свое здоровье?</div>
-                    <div class="main-banner-content__text">
-    
-                    </div>
-                    <div class="main-banner-content__button">
-                        <button class="button button_primary">Отправить бесплатный запрос</button>
+    <div class="main-banner">
+        <div class="main-slider owl-carousel">
+            <div class="main-slider__slide" style="background-image: url('images/slide1.jpg');">
+                <div class="container">
+                    <div class="main-banner__content">
+                        <h1 class="main-banner-content__title">Все виды диагностики <br>и лечения в Южной корее <br>пластическая хирургия</h1>
+                        <div class="main-banner-content__subtitle">Столкнулись с медецинской проблемой или просто решили проверить свое здоровье?</div>
+                        <div class="main-banner-content__text">Наша компания специализируется в предоставленииполной информации <br>о возможностях и качестве обслуживания медицины в Южной Корее. <br>Мы не предоставляем Вам услуги, мы консультируем Вас.</div>
+                        <div class="main-banner-content__button">
+                            <button class="button_slider button" type="button">Отправить бесплатный запрос</button>
+                        </div>
                     </div>
                 </div>
-                <div class="banner-content__controls"></div>
+            </div>
+            <div class="main-slider__slide" style="background-image: url('images/slide1.jpg');">
+                <div class="container">
+                    <div class="main-banner__content">
+                        <h1 class="main-banner-content__title">Все виды диагностики <br>и лечения в Южной корее <br>пластическая хирургия</h1>
+                        <div class="main-banner-content__subtitle">Столкнулись с медецинской проблемой или просто решили проверить свое здоровье?</div>
+                        <div class="main-banner-content__text">Наша компания специализируется в предоставленииполной информации <br>о возможностях и качестве обслуживания медицины в Южной Корее. <br>Мы не предоставляем Вам услуги, мы консультируем Вас.</div>
+                        <div class="main-banner-content__button">
+                            <button class="button_slider button" type="button">Отправить бесплатный запрос</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+    <div class="how-we-work">
+        <div class="container">
+            <div class="how-we-work__title">NLC — эффективное лечение <br>начинается с точной диагностики</div>
+            <div class="how-we-work__text">Наша компания осуществляет консультацию и полное сопровождение <br>до, во время и после лечения.</div>
+            <div class="how-we-work__subtitle">Как мы работаем</div>
+            <div class="how-we-work-grid">
+                <div class="how-we-work-grid__item">
+                    <div class="how-we-work-grid__icon-wrapper">
+                        <div class="how-we-work-grid__icon">
+                            <i class="fri fri-icon-request"></i>
+                        </div>
+                    </div>
+                    <div class="how-we-work-grid__text"><b>Вы оставляете запрос</b>, после чего <br>мы связываемся с Вами для уточнения полной информации</div>
+                </div>
+                <div class="how-we-work-grid__narrow">
+                    <i class="fri fri-icon-narrow"></i>
+                </div>
+                <div class="how-we-work-grid__item">
+                    <div class="how-we-work-grid__icon-wrapper">
+                        <div class="how-we-work-grid__icon">
+                            <i class="fri fri-icon-information"></i>
+                        </div>
+                    </div>
+                    <div class="how-we-work-grid__text"><b>Предоставляем полную информацию</b> о вариантах лечения и возможных расходах</div>
+                </div>
+                <div class="how-we-work-grid__narrow">
+                    <i class="fri fri-icon-narrow"></i>
+                </div>
+                <div class="how-we-work-grid__item">
+                    <div class="how-we-work-grid__icon-wrapper">
+                        <div class="how-we-work-grid__icon">
+                            <i class="fri fri-icon-visit"></i>
+                        </div>
+                    </div>
+                    <div class="how-we-work-grid__text"><b>Организовываем поездку:</b> Билеты, трансфер, проживание, переводчик и т.п.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="form-request">
+        <div class="container">
+            <div class="form-request__title">Запросите стоимость <br>Вашего лечения/диагностики</div>
+            <div class="form-request__subtitle">Мы проконсультируем Вас и поможем найти оптимальный вариант лечения</div>
+            <form class="form-request__form">
+                <textarea class="form-request__textarea" placeholder="Ваш запрос, информация о заболевании (диагноз), любая формулировка"></textarea>
+                <input type="text" class="form-request__full-name">
+                <input type="text" class="form-request__contacts">
+                <input type="checkbox" class="form-request__checkbox">
+                <button class="form-request__button button" type="button">Отправить бесплатный запрос</button>
+            </form>
+        </div>
+    </div>
+
 {% endblock %}
