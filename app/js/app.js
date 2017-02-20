@@ -261,6 +261,16 @@
             loop: true,
             items: 1,
         });
+        $('.review-slider').owlCarousel({
+            nav: true,
+            loop: true,
+            items: 1,
+        });
+        $('.say-about-slider').owlCarousel({
+            nav: true,
+            loop: true,
+            items: 1,
+        });
     });
 
 })();
