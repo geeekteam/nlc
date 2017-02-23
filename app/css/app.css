@@ -171,6 +171,7 @@ strong, b {
 
 button {
   border: none;
+  outline: none;
 }
 
 .owl-carousel .owl-item img {
@@ -256,14 +257,21 @@ button {
 }
 
 .button {
-  min-height: 55px;
+  position: relative;
   font-family: "PT Sans Narrow Bold", sans-serif;
   color: #FFFFFF;
+  font-size: 22px;
+  cursor: pointer;
+  min-height: 55px;
   background: linear-gradient(to right, #f44b51, #ff5a60);
   box-shadow: 0 2px 3px -1px #9a9a9a;
   border-top: 2px solid #ff8c90;
   border-radius: 3px;
-  cursor: pointer;
+  opacity: 1;
+  transition: all 0.3s ease 0s;
+}
+.button:hover {
+  opacity: 0.8;
 }
 
 .button__header {
@@ -271,11 +279,6 @@ button {
   max-width: 274px;
   width: 100%;
   float: right;
-}
-
-.button__text {
-  width: 100%;
-  font-size: 18px;
 }
 
 .button_slider {
@@ -1030,4 +1033,28 @@ section__header_mb25px {
 .footer-social__text {
   display: block;
   margin-bottom: 15px;
+}
+
+.button1 {
+  position: relative;
+  font-family: "PT Sans Narrow Bold", sans-serif;
+  color: #FFFFFF;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.button1__custom {
+  position: relative;
+  width: 200px;
+  min-height: 55px;
+  z-index: 2;
+  background: linear-gradient(to right, #f44b51, #ff5a60);
+  box-shadow: 0 2px 3px -1px #9a9a9a;
+  border-top: 2px solid #ff8c90;
+  border-radius: 3px;
+  opacity: 1;
+  transition: all 0.3s ease 0s;
+}
+.button1__custom:hover {
+  opacity: 0.8;
 }
