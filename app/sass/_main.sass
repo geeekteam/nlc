@@ -43,18 +43,14 @@ button
   max-width: 830px
 
 .header
-  margin-bottom: 16px
-
-.header__wrapper
+  margin-top: 15px
   margin-bottom: 15px
 
 .main-header
   display: flex
   justify-content: space-between
   align-items: center
-
-.header__wrapper
-  padding-top: 15px
+  margin-bottom: 15px
 
 .main-header__logo
   flex-basis: 286px
@@ -156,12 +152,16 @@ button
 .section
   padding: 70px 0
   background-color: #FFFFFF
+  overflow: hidden
 
 .section_grey
   background-color: #f6f6f6
 
 .section_taupe
   background-color: #444444
+
+.section_korea
+  padding: 52px 0 56px 0
 
 .section_pb_0
   padding-bottom: 0
@@ -171,6 +171,9 @@ button
 
 .section_pt40px
   padding-top: 40px
+
+.section_pt45px
+  padding-top: 45px
 
 .section_pt50px
   padding-top: 50px
@@ -188,13 +191,19 @@ button
   padding: 75px 0 70px
 
 .section_pt80px
-  padding: 80px
+  padding-top: 80px
 
 .section_pb20px
   padding-bottom: 20px
 
+.section_pb30px
+  padding-bottom: 30px
+
 .section_pb40px
   padding-bottom: 40px
+
+.section_pb55px
+  padding-bottom: 55px
 
 .section_pb60px
   padding-bottom: 60px
@@ -213,10 +222,16 @@ button
 
 .section__header
   margin: 0 auto 50px
-  max-width: 700px
+  max-width: 680px
 
-.section__header_mb0
-  margin-bottom: 0
+.section__header_w800px
+  max-width: 800px
+
+.section__header_mb20px
+  margin-bottom: 20px
+
+section__header_mb25px
+  margin-bottom: 25px
 
 .section__header_w780
   max-width: 780px
@@ -227,10 +242,13 @@ button
   text-align: center
   margin-bottom: 10px
 
+.section__title_m0
+  margin: 0
+
 .section__title_f55px
   font-size: 55px
   
-.section__title_cw
+.section__title_white
   color: #FFFFFF
 
 .section__title_mb15px
@@ -260,10 +278,9 @@ button
 .section__text
   font-size: 22px
   text-align: center
-  line-height: 1.5
-  margin-bottom: 20px
+  line-height: 1.4
   
-.section__text_cw
+.section__text_white
   color: #FFFFFF
 
 .section__text_mb50px
@@ -277,18 +294,17 @@ button
 
 .section-grid
   display: flex
-  justify-content: center
-  align-items: baseline
+  justify-content: space-between
 
 .section-grid__item
-  flex-basis: 560px
+  width: 355px
   position: relative
   &::before
     +sprite(icon-narrow-right)
     content: ''
     position: absolute
     top: 50px
-    right: -15px
+    right: -30px
   &:last-child
     &::before
       display: none
@@ -386,39 +402,40 @@ button
   width: 100%
   margin: 0 auto
 
-.advantage
-  display: flex
-  justify-content: space-between
-  width: 100%
-
 .advantage-image
-  position: absolute
+  position: relative
+  width: 50%
+  float: left
 
 .advantage-image__doctor
-  margin: -60px 0px 0 -84px
+  position: absolute
+  margin-top: -49px
+  margin-left: -87px
+  //position: absolute
+  //width: 100%
+  //margin: -60px 0px 0 -84px
 
 .list-advantage
-  display: flex
-  flex-direction: column
-  max-width: 615px
-  width: 100%
-  margin-left: 525px
+  position: relative
+  float: right
+  margin-left: -15px
+  width: 55%
 
 .list-advantage__title
-  align-self: flex-start
-
-.section__title_advantage
-  margin-bottom: 28px
+  font-family: "PT Sans Narrow Bold", sans-serif
+  line-height: 1em
+  font-size: 50px
+  padding-top: 14px
+  padding-left: 15px
   text-align: left
 
 .list-advantage__item
+  padding-top: 24px
+  padding-left: 15px
   display: flex
   align-items: center
-  margin-bottom: 24px
-  max-width: 560px
+  max-width: 650px
   width: 100%
-  &:last-child
-    margin-bottom: 0
 
 .list-advantage__icon
   display: flex
@@ -482,43 +499,54 @@ button
   font-size: 18px
   line-height: 1.7em
 
-.say-about-slider__slide
-  display: flex
-  justify-content: space-between
-  flex-wrap: wrap
-  max-width: 760px
+.say-about
+  width: 800px
   margin: 0 auto
 
-.say-about-slider__image
-  flex-shrink: 0
-  margin-bottom: 40px
+.say-about__inner
+  width: 762px
+  margin: -40px 18px 0
+
+.say-about-grid
+  display: flex
+  flex-wrap: wrap
+  margin-top: -40px
+  margin-left: -43px
+
+.say-about-grid__item
+  padding: 40px 0 0 43px
 
 .news
   display: flex
   flex-wrap: wrap
-  flex-basis: 100%
-  justify-content: space-between
+  margin-bottom: 40px
+  margin-top: -45px
+  margin-left: -120px
 
 .news__block
-  display: flex
-  flex-wrap: nowrap
-  justify-content: space-between
-  width: 510px
-  margin-bottom: 40px
+  width: 50%
+  padding-top: 45px
+  padding-left: 120px
+
+.news__link
+  text-decoration: none
 
 .news-image
+  width: 134px
+  height: 134px
+
+.news__image
   position: relative
-  margin-right: 10px
+  float: left
+  margin-right: 20px
 
 .news-image__image
-  width: 131px
-  height: 131px
   border-radius: 50%
   border-color: #e1dede
-
-.news-text
-  display: flex
-  flex-direction: column
+  object-fit: cover
+  position: relative
+  height: 100%
+  width: 134px
 
 .news-text__preview
   text-decoration: none
@@ -541,12 +569,15 @@ button
 
 .faq
   display: flex
-  justify-content: space-between
   flex-wrap: wrap
+  margin-top: -25px
+  margin-left: -100px
 
 .faq__item
-  width: 510px
-  margin-bottom: 25px
+  width: 50%
+  padding-top: 25px
+  padding-left: 100px
+  //margin-bottom: 25px
 
 .faq__title
   font-family: "PT Sans Bold", sans-serif
@@ -562,18 +593,30 @@ button
   justify-content: space-between
 
 .social__instagram
-  width: 740px
+  width: 785px
 
 .social__facebook
   width: 310px
 
-.instagram
+//.instagram
+//  display: flex
+//  flex-wrap: wrap
+//  margin-top: -40px
+//  margin-left: -45px
+
+
+.instagram-grid
   display: flex
-  justify-content: space-between
   flex-wrap: wrap
+  width: 100%
+  margin-top: -40px
+  margin-left: -45px
 
 .instagram__item
-  width: 350px
+  width: 50%
+  padding-top: 40px
+  padding-left: 45px
+  text-decoration: none
 
 .social__title
   font-family: "PT Sans Narrow Bold", sans-serif
@@ -581,10 +624,6 @@ button
   margin-bottom: 40px
   width: 100%
   text-align: center
-
-.instagram__item
-  margin-bottom: 40px
-  text-decoration: none
 
 .instagram__image
   width: 346px

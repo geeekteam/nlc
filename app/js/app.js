@@ -266,7 +266,7 @@
             loop: true,
             items: 1,
         });
-        $('.say-about-slider').owlCarousel({
+        $('.say-about').owlCarousel({
             nav: true,
             loop: true,
             items: 1,
