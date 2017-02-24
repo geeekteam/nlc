@@ -34,14 +34,18 @@ button
   margin: 0 auto
   padding: 0 15px
 
-.container_w780px
-  max-width: 780px
 
 .container_w710px
   max-width: 710px
 
+.container_w780px
+  max-width: 780px
+
 .container_w830px
   max-width: 830px
+
+.container_w900px
+  max-width: 900px
 
 .header
   margin-top: 15px
@@ -89,6 +93,7 @@ button
 
 .button
   position: relative
+  display: block
   font-family: "PT Sans Narrow Bold", sans-serif
   color: #FFFFFF
   font-size: 22px
@@ -172,6 +177,9 @@ button
 .section_pt_10
   padding-top: 10px
 
+.section_pt_25px
+  padding-bottom: 25px
+
 .section_pt40px
   padding-top: 40px
 
@@ -230,11 +238,17 @@ button
 .section__header_w800px
   max-width: 800px
 
+.section__header_w900px
+  max-width: 900px
+
 .section__header_mb20px
   margin-bottom: 20px
 
-section__header_mb25px
-  margin-bottom: 25px
+.section__header_mb30px
+  margin-bottom: 30px
+
+.section__header_mb40px
+  margin-bottom: 40px
 
 .section__header_w780
   max-width: 780px
@@ -285,6 +299,9 @@ section__header_mb25px
   
 .section__text_white
   color: #FFFFFF
+
+.section__text_lh1-5
+  line-height: 1.5em
 
 .section__text_mb50px
   margin-bottom: 50px
@@ -718,3 +735,52 @@ section__header_mb25px
   transition: all 0.3s ease 0s
   &:hover
     opacity: 0.8
+
+a
+  &:hover
+    text-decoration: underline
+
+// Diagnostic page
+
+.button__banner
+  width: 287px
+  margin: 0 auto
+
+.banner
+  background: url("../images/diagnostic-banner.jpg") center no-repeat
+
+.section__body
+  margin-bottom: 65px
+
+.section__footer
+  border-top: 2px solid #FFFFFF
+
+.section__footer_w900px
+  width: 900px
+
+.banner-grid
+  width: 100%
+  display: flex
+  flex-wrap: nowrap
+  padding-top: 25px
+  margin-left: -15px
+
+.banner-grid__item
+  width: 33.3%
+  padding-left: 15px
+
+.banner-grid__number
+  display: block
+  font-family: "PT Sans Narrow Bold", sans-serif
+  font-size: 60px
+  float: left
+  line-height: 0.8em
+  color: #FFFFFF
+  margin-right: 9px
+
+.banner-grid__text
+  font-family: "PT Sans Narrow Bold", sans-serif
+  font-size: 22px
+  color: #FFFFFF
+  text-transform: lowercase
+  

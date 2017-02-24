@@ -261,11 +261,22 @@
             loop: true,
             items: 1,
         });
+
+        owl = $('.main-slider').owlCarousel();
+        $(".prev").click(function () {
+            owl.trigger('prev.owl.carousel');
+        });
+
+        $(".next").click(function () {
+            owl.trigger('next.owl.carousel');
+        });
+
         $('.review-slider').owlCarousel({
             nav: true,
             loop: true,
             items: 1,
         });
+
         $('.say-about').owlCarousel({
             nav: true,
             loop: true,
