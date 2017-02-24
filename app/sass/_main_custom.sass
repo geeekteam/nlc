@@ -1,0 +1,63 @@
+button.accordion
+  background-color: #eee
+  color: #444
+  cursor: pointer
+  padding: 18px
+  width: 100%
+  text-align: left
+  border: none
+  outline: none
+  transition: 0.4s
+
+button.accordion.active, button.accordion:hover
+  background-color: #ddd
+
+.accordion__content
+  display: none
+  border-top: 2px solid #fe6268
+  border-bottom: 2px solid #fe6268
+  padding: 45px 0
+
+.accordion__text
+  font-size: 17px
+  line-height: 1.5em
+
+.accordion__title
+  font-family: "PT Sans Narrow Bold", sans-serif
+  font-size: 30px
+  padding: 35px 0 45px 0
+  text-align: center
+
+.table
+  display: table
+
+.table__tr
+  display: table-row
+
+.table__td, .table__th
+  display: table-cell
+  border: 2px solid #FFFFFF
+  background-color: #f8f8f8
+
+.table__th
+  display: table-row
+  font-family: "PT Sans Narrow Bold"
+  font-size: 20px
+  text-align: center
+
+.table__tr
+  display: table-row
+
+.table__td
+  padding: 20px 10px
+  font-size: 17px
+  &:nth-child(1)
+    font-family: "PT Sans Narrow Bold"
+    font-size: 20px
+    width: 200px
+  &:nth-child(2)
+    width: 430px
+  &:nth-child(3)
+    width: 330px
+  &:nth-child(4)
+    width: 180px
