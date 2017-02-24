@@ -1,10 +1,8 @@
-.owl-nav
-  display: none
-
-html, body
+body
   font-family: "PT Sans Regular", sans-serif
-  margin: 0
   height: 100%
+  color: #333
+
 
 h1, h2, h3, h4, h5, h6
   font-family: "PT Sans Narrow Bold", sans-serif
@@ -13,6 +11,13 @@ h1, h2, h3, h4, h5, h6
 strong, b
   font-family: "PT Sans Bold", sans-serif
   font-weight: normal
+
+.st-title
+  font-family: "PT Sans Narrow Bold", sans-serif
+  line-height: 1em
+
+.fz50
+  font-size: 50px
 
 *
   box-sizing: border-box
@@ -35,6 +40,28 @@ button
   padding: 0 15px
 
 
+.why-korea
+  padding-left: 500px
+  position: relative
+  &:before
+    content: ''
+    background: url('../images/doctor.png') no-repeat center center
+    -webkit-background-size: contain
+    background-size: contain
+    width: 683px
+    height: 755px
+    position: absolute
+    left: -100px
+    bottom: -75px
+    z-index: 10
+
+.why-korea__content
+  position: relative
+  z-index: 20
+
+.why-korea__title
+  margin-bottom: 25px
+
 .container_w710px
   max-width: 710px
 
@@ -47,9 +74,9 @@ button
 .container_w900px
   max-width: 900px
 
-.header
-  margin-top: 15px
-  margin-bottom: 15px
+
+.header__top
+  padding-top: 15px
 
 .main-header
   display: flex
@@ -124,11 +151,104 @@ button
 .main-menu
   display: flex
   justify-content: space-between
+  list-style: none
+  font-size: 18px
 
 .main-menu__item
+  position: relative
+  &:hover
+    .main-menu__dropmenu
+      display: block
+
+.main-menu__item_dropmenu
+  &:hover
+    .main-menu__link
+      text-decoration: none
+    .main-menu__link
+      &:after
+        content: ''
+        position: absolute
+        +arr(9,5,#231f20,b)
+        top: 50%
+        right: -15px
+
+.main-menu__link
+  padding: 15px 0
+  display: inline-block
+  vertical-align: middle
   text-decoration: none
-  font-size: 18px
-  color: #333333
+  position: relative
+  &:hover
+    text-decoration: underline
+
+.main-menu__dropmenu
+  display: none
+  position: absolute
+  left: 0
+  top: 100%
+  margin-top: -5px
+  background-color: #fff
+  width: 340px
+  padding: 25px
+  box-shadow: 0 0 5px 2px #eee
+  z-index: 100
+
+.menu-dropdown
+  list-style: none
+  font-size: 16px
+
+.menu-dropdown__item
+  margin-bottom: 20px
+  &:last-child
+    margin-bottom: 0
+
+.menu-dropdown__link
+  text-decoration: none
+  &:hover
+    text-decoration: underline
+
+.main-slider
+  .owl-prev, .owl-next
+    position: absolute
+    +sprite(big-arrow, '', 'abs_middle')
+    font-size: 0
+    +trans()
+    &:hover
+      opacity: 0.7
+  .owl-prev
+    +sprite(big-arrow, '', 'abs_middle')
+    left: 75px !important
+    margin-left: 0 !important
+  .owl-next
+    +sprite(big-arrow, '', 'abs_middle')
+    left: auto !important
+    margin-left: 0 !important
+    right: 75px !important
+    +rotate(180)
+  .owl-dots
+    position: absolute
+    width: 100%
+    left: 0
+    bottom: 20px
+    text-align: center
+  .owl-dot
+    display: inline-block
+    vertical-align: middle
+    margin: 0 4px
+    width: 13px
+    height: 13px
+    border-radius: 50%
+    +trans()
+    background-color: #fff
+    border: 3px solid #fff
+    &:hover
+      background-color: #1bb603
+      border-color: #fff
+    &.active
+      background-color: #1bb603
+      border-color: #1bb603
+
+  
 
 .main-slider__content
   position: static
@@ -166,9 +286,6 @@ button
 
 .section_taupe
   background-color: #444444
-
-.section_korea
-  padding: 52px 0 56px 0
 
 .section_pb_0
   padding-bottom: 0
@@ -421,40 +538,21 @@ button
   width: 100%
   margin: 0 auto
 
-.advantage-image
-  position: relative
-  width: 50%
-  float: left
-
-.advantage-image__doctor
-  position: absolute
-  margin-top: -49px
-  margin-left: -87px
-  //position: absolute
-  //width: 100%
-  //margin: -60px 0px 0 -84px
-
-.list-advantage
-  position: relative
-  float: right
-  margin-left: -15px
-  width: 55%
 
 .list-advantage__title
   font-family: "PT Sans Narrow Bold", sans-serif
   line-height: 1em
   font-size: 50px
-  padding-top: 14px
-  padding-left: 15px
   text-align: left
 
 .list-advantage__item
-  padding-top: 24px
-  padding-left: 15px
   display: flex
   align-items: center
   max-width: 650px
   width: 100%
+  margin-bottom: 25px
+  &:last-child
+    margin-bottom: 0
 
 .list-advantage__icon
   display: flex
