@@ -69,21 +69,23 @@
         </div>
     </div>
 
-    <div class="section section_form">
-        <div class="container">
-            <div class="section__header section__header_w800px section__header_mb20px">
-                <div class="section__title section__title_f55px section__title_mb15px section__title_white">Запросите стоимость <br>Вашего лечения/диагностики</div>
-                <div class="section__text section__text_white">Мы проконсультируем Вас и поможем найти оптимальный вариант лечения</div>
+    <div class="section-form">
+        <div class="section-form__container container">
+            <div class="section-form__header">
+                <div class="section__title">Запросите стоимость <br>Вашего лечения/диагностики</div>
+                <div class="section__text">Мы проконсультируем Вас и поможем найти оптимальный вариант лечения</div>
             </div>
-        </div>
-        <div class="container container_w830px">
             <form class="form-request">
-                <textarea class="form-request__textarea" placeholder="Ваш запрос, информация о заболевании (диагноз), любая формулировка"></textarea>
-                <div class="form-request__inputs">
-                    <input class="form-request__input" type="text" placeholder="ФИО">
-                    <input class="form-request__input" type="text"placeholder="Контактный телефон или email">
+                <div class="form-request__line">
+                    <textarea class="st-textarea" placeholder="Ваш запрос, информация о заболевании (диагноз), любая формулировка"></textarea>
                 </div>
-                <input class="form-request__checkbox" id="form-request__checkbox" type="checkbox">
+                <div class="form-request__line">
+                    <input class="form-request__input" type="text" placeholder="ФИО">
+                    <input class="form-request__input" type="text" placeholder="Контактный телефон или email">
+                </div>
+                <div class="form-request__line">
+                    <input class="form-request__checkbox" id="form-request__checkbox" type="checkbox">
+                </div>
                 <label class="section__input-label" for="form-request__checkbox">Отправляя запрос, я соглашаюсь на обработку своих персональных данных</label>
                 <button class="form-request__button button" type="button">Отправить бесплатный запрос</button>
             </form>

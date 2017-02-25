@@ -19,13 +19,15 @@ strong, b
 .fz50
   font-size: 50px
 
+.fz55
+  font-size: 55px
+
 *
   box-sizing: border-box
   padding: 0
   margin: 0
-  font-weight: normal
   line-height: 1em
-  color: #333333
+  color: #333
 
 button
   border: none
@@ -39,6 +41,8 @@ button
   margin: 0 auto
   padding: 0 15px
 
+.section-form__container
+  max-width: 800px
 
 .why-korea
   padding-left: 500px
@@ -351,14 +355,8 @@ button
   margin: 0 auto 50px
   max-width: 680px
 
-.section__header_w800px
-  max-width: 800px
-
 .section__header_w900px
   max-width: 900px
-
-.section__header_mb20px
-  margin-bottom: 20px
 
 .section__header_mb30px
   margin-bottom: 30px
@@ -378,14 +376,8 @@ button
 .section__title_m0
   margin: 0
 
-.section__title_f55px
-  font-size: 55px
-  
 .section__title_white
   color: #FFFFFF
-
-.section__title_mb15px
-  margin-bottom: 15px
 
 .section__title_mb20px
   margin-bottom: 20px
@@ -471,13 +463,17 @@ button
   line-height: 1.5em
   padding: 0 30px
   
-.section_form
+.section-form
   position: relative
   background-image: url("../images/form-request-banner.jpg")
   background-repeat: no-repeat
   background-size: cover
   -webkit-background-size: cover
-  color: #FFFFFF
+  color: #fff
+  padding: 70px 0
+
+.section-form__header
+  margin-bottom: 20px
 
 .form-request
   text-align: center
@@ -496,20 +492,20 @@ button
   color: #FFFFFF
   margin-bottom: 24px
 
-.form-request__textarea
+.st-textarea
   font-family: "PT Sans Regular", sans-serif
   font-size: 17px
-  flex-shrink: 0
   width: 100%
   height: 88px
-  border-radius: 3px
+  border-radius: 5px
   resize: none
   padding: 15px
-  margin-bottom: 10px
+  color: #8f8f8f
+  outline: none
+  border: none
 
-.form-request__inputs
-  display: flex
-  justify-content: space-between
+.form-request__line
+  margin-bottom: 15px
 
 .form-request__input
   font-family: "PT Sans Regular", sans-serif
