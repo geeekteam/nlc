@@ -3,6 +3,8 @@ body
   height: 100%
   color: #333
 
+a
+  color: inherit
 
 h1, h2, h3, h4, h5, h6
   font-family: "PT Sans Narrow Bold", sans-serif
@@ -22,17 +24,19 @@ strong, b
 .fz55
   font-size: 55px
 
+.tac
+  text-align: center
+
 *
   box-sizing: border-box
   padding: 0
   margin: 0
   line-height: 1em
-  color: #333
 
 button
   border: none
   outline: none
-
+ 
 .owl-carousel .owl-item img
   width: inherit
 
@@ -43,6 +47,9 @@ button
 
 .section-form__container
   max-width: 800px
+
+.section-presentation__container
+  max-width: 880px
 
 .why-korea
   padding-left: 500px
@@ -212,6 +219,7 @@ button
     text-decoration: underline
 
 .main-slider
+  padding: 0 !important
   .owl-prev, .owl-next
     position: absolute
     +sprite(big-arrow, '', 'abs_middle')
@@ -397,8 +405,6 @@ button
 .section__title_mb47px
   margin-bottom: 47px
 
-.section__title_mb40px
-  margin-bottom: 40px
 
 .section__text
   font-size: 22px
@@ -465,32 +471,27 @@ button
   
 .section-form
   position: relative
-  background-image: url("../images/form-request-banner.jpg")
+  background-image: url("../images/form-request-bg1.jpg")
   background-repeat: no-repeat
   background-size: cover
   -webkit-background-size: cover
   color: #fff
   padding: 70px 0
 
+.section-form_bg2
+  background-image: url("../images/form-request-bg2.jpg")
+
 .section-form__header
   margin-bottom: 20px
-
-.form-request
   text-align: center
-
-.form-request__title
-  font-family: "PT Sans Narrow Bold", sans-serif
+  
+.section-form__title
   font-size: 55px
-  color: #FFFFFF
-  text-align: center
-  margin-bottom: 17px
+  margin-bottom: 20px
+  font-family: "PT Sans Narrow Bold", sans-serif
 
-.form-request__subtitle
-  font-family: "PT Sans", sans-serif
+.section-form__descr
   font-size: 22px
-  text-align: center
-  color: #FFFFFF
-  margin-bottom: 24px
 
 .st-textarea
   font-family: "PT Sans Regular", sans-serif
@@ -504,28 +505,67 @@ button
   outline: none
   border: none
 
+.st-input
+  font-family: "PT Sans Regular", sans-serif
+  font-size: 17px
+  width: 100%
+  height: 42px
+  border-radius: 5px
+  resize: none
+  padding: 0 15px
+  color: #8f8f8f
+  outline: none
+  border: none
+
+.st-checkbox
+  width: 28px
+  height: 28px
+  background-color: #fff
+  border-radius: 5px
+  position: relative
+
+.st-checkbox__input
+  position: absolute
+  left: 0
+  opacity: 0
+  width: 100%
+  height: 100%
+  top: 0
+  &:checked + .st-checkbox__checkbox
+    opacity: 1
+
+
+.st-checkbox__checkbox
+  +sprite(checkbox-icon, '', 'abs_middle')
+  +trans()
+  opacity: 0
+
+.st-label
+  display: inline-block
+  vertical-align: middle
+  cursor: pointer
+  position: relative
+  padding: 6px 0 6px 40px
+  min-height: 28px
+
+.st-label__checkbox
+  +pos(tm)
+  position: absolute
+  left: 0
+
+.st-label__text
+  font-size: 17px
+
 .form-request__line
   margin-bottom: 15px
 
+.form-request__inputs
+  display: flex
+  justify-content: space-between
+
 .form-request__input
-  font-family: "PT Sans Regular", sans-serif
-  font-size: 17px
-  max-width: 393px
-  padding: 7px 15px
-  width: 100%
-  margin-bottom: 20px
+  width: 48%
 
-.form-request__checkbox
-  float: left
-  width: 28px
-  height: 28px
-
-.section__input-label
-  color: #FFFFFF
-  padding: 5px 0 5px 10px
-  font-size: 17px
-  float: left
-  margin-bottom: 15px
 
 .form-request__button
   font-family: "PT Sans Narrow Bold", sans-serif
@@ -572,21 +612,29 @@ button
   margin-bottom: 55px
 
 .review-slider__content
-  display: flex
-  align-items: center
-  flex-basis: 880px
-  max-width: 880px
-  width: 880px
-  margin: 0 auto
+  position: relative
+  padding-left: 200px
+  min-height: 200px
 
 .review-slider__photo
   margin-right: 30px
-
-.review-slider__img
-  max-width: 168px
-  max-height: 168px
+  width: 170px
+  height: 170px
   border-radius: 50%
   border: 5px solid #e1dede
+  background-color: #fff
+  overflow: hidden
+  position: absolute
+  left: 0
+  top: 50%
+  margin-top: -85px
+  font-size: 0
+  line-height: 0
+
+.review-slider__img
+  width: 160px !important
+  height: 160px
+  object-fit: cover
 
 .review-slider__header
   display: flex
@@ -612,13 +660,6 @@ button
   font-size: 18px
   line-height: 1.7em
 
-.say-about
-  width: 800px
-  margin: 0 auto
-
-.say-about__inner
-  width: 762px
-  margin: -40px 18px 0
 
 .say-about-grid
   display: flex
@@ -876,3 +917,33 @@ a
   font-size: 22px
   color: #FFFFFF
   text-transform: lowercase
+
+.owl-carousel
+  padding: 0 140px
+
+.owl-prev, .owl-next
+  position: absolute
+  +sprite(arrow-left, '', 'abs_middle')
+  font-size: 0
+  +trans()
+  &:hover
+    opacity: 0.7
+.owl-prev
+  +sprite(arrow-left, '', 'abs_middle')
+  left: 0 !important
+  margin-left: 0 !important
+.owl-next
+  +sprite(arrow-left, '', 'abs_middle')
+  left: auto !important
+  margin-left: 0 !important
+  right: 0 !important
+  +rotate(180)
+
+
+.section-presentation
+  position: relative
+  background-image: url("../images/presentation-bg1.jpg")
+  background-repeat: no-repeat
+  background-size: cover
+  -webkit-background-size: cover
+  color: #fff

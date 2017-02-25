@@ -1,37 +1,38 @@
 {% extends "layouts/app.twig" %}
 
-{% block pageTitle %}Главная страница{% endblock %}
+{% block pageTitle %} Диагностика {% endblock %}
 
 
 {% block content %}
-    <div class="main-slider owl-carousel">
-        <div class="main-slider__slide" style="background-image: url('images/slide1.jpg');">
-            <div class="container">
-                <div class="main-slider__content">
-                    <h1 class="main-slider__title">Все виды диагностики <br>и лечения в Южной корее <br>пластическая хирургия</h1>
-                    <div class="main-slider__subtitle">Столкнулись с медецинской проблемой или просто решили проверить свое здоровье?</div>
-                    <div class="main-slider__text">Наша компания специализируется в предоставленииполной информации <br>о возможностях и качестве обслуживания медицины в Южной Корее. <br>Мы не предоставляем Вам услуги, мы консультируем Вас.</div>
-                    <div class="main-slider__button">
-                        <button class="button_slider button" type="button">Отправить бесплатный запрос</button>
-                    </div>
-                </div>
+    <div class="section-presentation">
+        <div class="section">
+            <div class="section-presentation__container container tac">
+                <h1 class="section-presentation__title st-title fz55">Программы комплексного обследования в медецинском центре «Сунчонхян»</h1>
+                <div class="section-presentation__descr">Медицинский центр Сунчонхян получил высшее звание клиники 3-го уровня в лечении сердечно-сосудистых, раковых и других различных серьезных заболевании. Используется новейшее оборудование последних разработок , с помощью которых устанавливают точный диагноз и подбирают соответствующий эффективный метод лечения.</div>
+                <p><a class="button button_fz22" href="#">Отправить бесплатный запрос</a></p>
             </div>
         </div>
-        <div class="main-slider__slide" style="background-image: url('images/slide1.jpg');">
-            <div class="container">
-                <div class="main-slider__content">
-                    <h1 class="main-slider__title">Все виды диагностики <br>и лечения в Южной корее <br>пластическая хирургия</h1>
-                    <div class="main-slider__subtitle">Столкнулись с медецинской проблемой или просто решили проверить свое здоровье?</div>
-                    <div class="main-slider__text">Наша компания специализируется в предоставленииполной информации <br>о возможностях и качестве обслуживания медицины в Южной Корее. <br>Мы не предоставляем Вам услуги, мы консультируем Вас.</div>
-                    <div class="main-slider__button">
-                        <button class="button_slider button" type="button">Отправить бесплатный запрос</button>
+        <div class="section-presentation__footer">
+            <div class="section-presentation__container container">
+                <div class="grid grid_el_3">
+                    <div class="grid__item presentation-item">
+                        <div class="presentation-item__number">32</div>
+                        <div class="presentation-item__descr">терапевтических и хирургических отделения</div>
+                    </div>
+                    <div class="grid__item presentation-item">
+                        <div class="presentation-item__number">32</div>
+                        <div class="presentation-item__descr">терапевтических и хирургических отделения</div>
+                    </div>
+                    <div class="grid__item presentation-item">
+                        <div class="presentation-item__number">32</div>
+                        <div class="presentation-item__descr">терапевтических и хирургических отделения</div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="section">
+    <div class="section section_pt75px section_pb60px">
         <div class="container">
             <div class="section__header">
                 <div class="section__title">NLC — эффективное лечение начинается с точной диагностики</div>
@@ -69,79 +70,94 @@
         </div>
     </div>
 
-    <div class="section-form">
-        <div class="section-form__container container">
-            <div class="section-form__header">
-                <div class="section-form__title">Запросите стоимость <br>Вашего лечения/диагностики</div>
-                <div class="section-form__descr">Мы проконсультируем Вас и поможем найти оптимальный вариант лечения</div>
+    <div class="section section_form">
+        <div class="container">
+            <div class="section__header section__header_w800px section__header_mb20px">
+                <div class="section__title section__title_f55px section__title_mb15px section__title_white">Запросите стоимость <br>Вашего лечения/диагностики</div>
+                <div class="section__text section__text_white">Мы проконсультируем Вас и поможем найти оптимальный вариант лечения</div>
             </div>
+        </div>
+        <div class="container container_w830px">
             <form class="form-request">
-                <div class="form-request__line">
-                    <textarea class="st-textarea" placeholder="Ваш запрос, информация о заболевании (диагноз), любая формулировка"></textarea>
+                <textarea class="form-request__textarea" placeholder="Ваш запрос, информация о заболевании (диагноз), любая формулировка"></textarea>
+                <div class="form-request__inputs">
+                    <input class="form-request__input" type="text" placeholder="ФИО">
+                    <input class="form-request__input" type="text"placeholder="Контактный телефон или email">
                 </div>
-                <div class="form-request__line">
-                    <div class="form-request__inputs">
-                        <input class="form-request__input st-input" type="text" placeholder="ФИО">
-                        <input class="form-request__input st-input" type="text" placeholder="Контактный телефон или email">
-                    </div>
-                </div>
-                <div class="form-request__line">
-                    <label class="st-label">
-                        <div class="st-label__checkbox st-checkbox">
-                            <input class="st-checkbox__input" type="checkbox">
-                            <div class="st-checkbox__checkbox"></div>
-                        </div>
-                        <span class="st-label__text">Отправляя запрос, я соглашаюсь на обработку своих персональных данных</span>
-                    </label>
-                </div>
+                <input class="form-request__checkbox" id="form-request__checkbox" type="checkbox">
+                <label class="section__input-label" for="form-request__checkbox">Отправляя запрос, я соглашаюсь на обработку своих персональных данных</label>
                 <button class="form-request__button button" type="button">Отправить бесплатный запрос</button>
             </form>
         </div>
     </div>
 
-    <div class="section">
+    <div class="section section_korea">
         <div class="container">
-            <div class="why-korea">
-                <div class="why-korea__content">
-                    <div class="why-korea__title">
-                        <div class="st-title fz50">Почему Южная Корея?</div>
+            <div class="advantage-image">
+                <img class="advantage-image__doctor" src="../images/doctor.png" alt="" />
+            </div>
+            <div class="list-advantage">
+                <div class="list-advantage__title">Почему Южная Корея?</div>
+                <div class="list-advantage__item">
+                    <div class="list-advantage__icon">
+                        <i class="fri fri_icon-equipment"></i>
                     </div>
-                    <div class="list-advantage">
-                        <div class="list-advantage__item">
-                            <div class="list-advantage__icon">
-                                <i class="fri fri_icon-equipment"></i>
+                    <p class="list-advantage__text">Новейшее оборудование</p>
+                </div>
+                <div class="list-advantage__item">
+                    <div class="list-advantage__icon">
+                        <i class="fri fri_icon-high-lvl"></i>
+                    </div>
+                    <p class="list-advantage__text">Высокий уровень медицинских технологий</p>
+                </div>
+                <div class="list-advantage__item">
+                    <div class="list-advantage__icon">
+                        <i class="fri fri_icon-high-skill"></i>
+                    </div>
+                    <p class="list-advantage__text">Высокая квалификация медицинского персонала</p>
+                </div>
+                <div class="list-advantage__item">
+                    <div class="list-advantage__icon">
+                        <i class="fri fri_icon-reliability"></i>
+                    </div>
+                    <p class="list-advantage__text">Надежные передовые услуги здравоохранения</p>
+                </div>
+                <div class="list-advantage__item">
+                    <div class="list-advantage__icon">
+                        <i class="fri fri_icon-price"></i>
+                    </div>
+                    <p class="list-advantage__text">Доступная стоимость лечения</p>
+                </div>
+                <div class="list-advantage__item">
+                    <div class="list-advantage__icon">
+                        <i class="fri fri_icon-korean-medics"></i>
+                    </div>
+                    <p class="list-advantage__text">Корейские медики достигли самого высокого уровня в диагностировании и лечении онкологических, кардиологических заболеваний, нарушений опорно-двигательного аппарата и др. заболеваний</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section section_grey section_pt_80 section_pb70px">
+        <div class="section__title section__title_mb40px">Отзывы клиентов</div>
+        <div class="container">
+            <div class="review-slider owl-carousel">
+                <div style="background-color: #f6f6f6;">
+                    <div class="container">
+                        <div class="review-slider__content">
+                            <div class="review-slider__photo">
+                                <img class="review-slider__img" src="../images/review-photo.jpg">
                             </div>
-                            <p class="list-advantage__text">Новейшее оборудование</p>
-                        </div>
-                        <div class="list-advantage__item">
-                            <div class="list-advantage__icon">
-                                <i class="fri fri_icon-high-lvl"></i>
+                            <div class="review-slider__text">
+                                <div class="review-slider__header">
+                                    <div class="review-slider__name">Марина Пшеничникова</div>
+                                    <div class="review-slider__right">
+                                        <span class="review-slider__place">Клиника: Квимс</span>
+                                        <span class="review-slider__date">29.09.2016</span>
+                                    </div>
+                                </div>
+                                <div class="review-slider__text">Мы решили ехать в Южную Корею, когда у нас возникли некоторые разногласия с российской медициной по поводу состояния здоровья нашего ребенка. Мы приехали сюда, Никите провели обследование: сделали УЗИ, взяли кровь, по результатам у нас был прием. Профессор – заведующий инфекционным отделением успокоил нас, сказал, что сын абсолютно здоров.</div>
                             </div>
-                            <p class="list-advantage__text">Высокий уровень медицинских технологий</p>
-                        </div>
-                        <div class="list-advantage__item">
-                            <div class="list-advantage__icon">
-                                <i class="fri fri_icon-high-skill"></i>
-                            </div>
-                            <p class="list-advantage__text">Высокая квалификация медицинского персонала</p>
-                        </div>
-                        <div class="list-advantage__item">
-                            <div class="list-advantage__icon">
-                                <i class="fri fri_icon-reliability"></i>
-                            </div>
-                            <p class="list-advantage__text">Надежные передовые услуги здравоохранения</p>
-                        </div>
-                        <div class="list-advantage__item">
-                            <div class="list-advantage__icon">
-                                <i class="fri fri_icon-price"></i>
-                            </div>
-                            <p class="list-advantage__text">Доступная стоимость лечения</p>
-                        </div>
-                        <div class="list-advantage__item">
-                            <div class="list-advantage__icon">
-                                <i class="fri fri_icon-korean-medics"></i>
-                            </div>
-                            <p class="list-advantage__text">Корейские медики достигли самого высокого уровня в диагностировании и лечении онкологических, кардиологических заболеваний, нарушений опорно-двигательного аппарата и др. заболеваний</p>
                         </div>
                     </div>
                 </div>
@@ -149,61 +165,36 @@
         </div>
     </div>
 
-    <div class="section section_grey">
-        <div class="container">
-            <div class="section__title section__title_mb40px">Отзывы клиентов</div>
-            {% include "widgets/reviews.twig" %}
-        </div>
-    </div>
-
-    <div class="section">
-        <div class="container">
-            <div class="section__title section__title_mb30px">Что о нас говорят</div>
-            <div class="say-about owl-carousel">
-                <div class="say-about__inner">
-                    <div class="say-about-grid">
-                        <div class="say-about-grid__item">
-                            <img src="images/say-about-video.jpg">
-                        </div>
-                        <div class="say-about-grid__item">
-                            <img src="images/say-about-video.jpg">
-                        </div>
-                        <div class="say-about-grid__item">
-                            <img src="images/say-about-video.jpg">
-                        </div>
-                        <div class="say-about-grid__item">
-                            <img src="images/say-about-video.jpg">
-                        </div>
+    <div class="section section_pt80px section_pb70px">
+        <div class="section__title section__title_mb30px">Что о нас говорят</div>
+        <div class="say-about owl-carousel">
+            <div class="say-about__inner">
+                <div class="say-about-grid">
+                    <div class="say-about-grid__item">
+                        <img src="../images/say-about-video.jpg">
                     </div>
-                </div>
-                <div class="say-about__inner">
-                    <div class="say-about-grid">
-                        <div class="say-about-grid__item">
-                            <img src="images/say-about-video.jpg">
-                        </div>
-                        <div class="say-about-grid__item">
-                            <img src="images/say-about-video.jpg">
-                        </div>
-                        <div class="say-about-grid__item">
-                            <img src="images/say-about-video.jpg">
-                        </div>
-                        <div class="say-about-grid__item">
-                            <img src="images/say-about-video.jpg">
-                        </div>
+                    <div class="say-about-grid__item">
+                        <img src="../images/say-about-video.jpg">
+                    </div>
+                    <div class="say-about-grid__item">
+                        <img src="../images/say-about-video.jpg">
+                    </div>
+                    <div class="say-about-grid__item">
+                        <img src="../images/say-about-video.jpg">
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="section section_grey">
+    <div class="section section_grey section_pt80px">
         <div class="container">
             <div class="section__title section__title_mb40px">Новости</div>
             <div class="news">
                 <div class="news__block">
                     <a class="news__link" href="#">
                         <div class="news__image news-image">
-                            <img class="news-image__image" src="images/news1.jpg" alt="">
+                            <img class="news-image__image" src="../images/news1.jpg" alt="">
                         </div>
                         <div class="news-text">
                             <p class="news-text__preview">Испанские ученые выяснили, что пальмовое масло провоцирует РАК. Оно используется в 90% кондитерских продуктов.</p>
@@ -214,7 +205,7 @@
                 <div class="news__block">
                     <a class="news__link" href="#">
                         <div class="news__image news-image">
-                            <img class="news-image__image" src="images/news2.jpg" alt="">
+                            <img class="news-image__image" src="../images/news2.jpg" alt="">
                         </div>
                         <div class="news-text">
                             <p href="" class="news-text__preview">Испанские ученые выяснили, что пальмовое масло провоцирует РАК. Оно используется в 90% кондитерских продуктов.</p>
@@ -225,7 +216,7 @@
                 <div class="news__block">
                     <a class="news__link" href="#">
                         <div class="news__image news-image">
-                            <img class="news-image__image" src="images/news3.jpg" alt="">
+                            <img class="news-image__image" src="../images/news3.jpg" alt="">
                         </div>
                         <div class="news-text">
                             <p href="" class="news-text__preview">Испанские ученые выяснили, что пальмовое масло провоцирует РАК. Оно используется в 90% кондитерских продуктов.</p>
@@ -236,7 +227,7 @@
                 <div class="news__block">
                     <a class="news__link" href="#">
                         <div class="news__image news-image">
-                            <img class="news-image__image" src="images/news4.jpg" alt="">
+                            <img class="news-image__image" src="../images/news4.jpg" alt="">
                         </div>
                         <div class="news-text">
                             <p href="#" class="news-text__preview">Испанские ученые выяснили, что пальмовое масло провоцирует РАК. Оно используется в 90% кондитерских продуктов.</p>
@@ -249,38 +240,26 @@
         </div>
     </div>
 
-    <div class="section-form section-form_bg2">
-        <div class="section-form__container container">
-            <div class="section-form__header">
-                <div class="section-form__title">Если есть вопрос, то задайте его нам</div>
-                <div class="section-form__descr">Наши консультанты проконсультируют Вас и ответят на все вопросы</div>
-            </div>
+    <div class="section section_form section_pt65px section_pb80px">
+        <div class="section__header section__header_w800px section__header_mb30px">
+            <div class="section__title section__title_f55px section__title_mb20px section__title_white">Если есть вопрос, то задайте его нам</div>
+            <div class="section__text section__text_white">Наши консультанты проконсультируют Вас и ответят на все вопросы</div>
+        </div>
+        <div class="container container_w830px">
             <form class="form-request">
-                <div class="form-request__line">
-                    <textarea class="st-textarea" placeholder="Ваш запрос, информация о заболевании (диагноз), любая формулировка"></textarea>
+                <textarea class="form-request__textarea" placeholder="Ваш запрос, информация о заболевании (диагноз), любая формулировка"></textarea>
+                <div class="form-request__inputs">
+                    <input class="form-request__input" type="text" placeholder="ФИО">
+                    <input class="form-request__input" type="text"placeholder="Контактный телефон или email">
                 </div>
-                <div class="form-request__line">
-                    <div class="form-request__inputs">
-                        <input class="form-request__input st-input" type="text" placeholder="ФИО">
-                        <input class="form-request__input st-input" type="text" placeholder="Контактный телефон или email">
-                    </div>
-                </div>
-                <div class="form-request__line">
-                    <label class="st-label">
-                        <div class="st-label__checkbox st-checkbox">
-                            <input class="st-checkbox__input" type="checkbox">
-                            <div class="st-checkbox__checkbox"></div>
-                        </div>
-                        <span class="st-label__text">Отправляя запрос, я соглашаюсь на обработку своих персональных данных</span>
-                    </label>
-                </div>
+                <input class="form-request__checkbox" id="form-request__checkbox" type="checkbox">
+                <label class="section__input-label" for="form-request__checkbox">Отправляя запрос, я соглашаюсь на обработку своих персональных данных</label>
                 <button class="form-request__button button" type="button">Отправить бесплатный запрос</button>
             </form>
         </div>
     </div>
 
-
-    <div class="section section_grey">
+    <div class="section section_grey section_pt50px">
         <div class="container">
             <div class="section__title section__title_mb40px">Часто задаваемые вопросы</div>
             <div class="faq">
@@ -312,7 +291,7 @@
         </div>
     </div>
 
-    <div class="section">
+    <div class="section section_pt45px section_pb55px">
         <div class="container">
             <div class="social">
                 <div class="social__instagram">
