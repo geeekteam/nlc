@@ -376,8 +376,6 @@ button
   max-width: 780px
 
 .section__title
-  font-family: "PT Sans Narrow Bold", sans-serif
-  font-size: 50px
   text-align: center
   margin-bottom: 10px
 
@@ -670,31 +668,34 @@ button
 .say-about-grid__item
   padding: 40px 0 0 43px
 
-.news
+.news-grid
   display: flex
   flex-wrap: wrap
-  margin-bottom: 40px
-  margin-top: -45px
-  margin-left: -120px
+  justify-content: space-between
+  margin-bottom: -45px
 
-.news__block
+.news-grid__item
   width: 50%
-  padding-top: 45px
-  padding-left: 120px
+  padding-bottom: 45px
+
+.news-item
+  min-height: 134px
+  width: 510px
 
 .news__link
   text-decoration: none
 
-.news-image
+.news-item-image
   width: 134px
   height: 134px
 
-.news__image
-  position: relative
-  float: left
-  margin-right: 20px
+.news-item__image
+  position: absolute
 
-.news-image__image
+.news-item__desc
+  padding-left: 150px
+
+.news-item-image__image
   border-radius: 50%
   border-color: #e1dede
   object-fit: cover
@@ -702,14 +703,17 @@ button
   height: 100%
   width: 134px
 
-.news-text__preview
+.news-item-desc
+  min-height: 134px
+
+.news-item-desc__preview
   text-decoration: none
   color: #333333
   font-size: 18px
   line-height: 1.7em
   margin-bottom: 10px
 
-.news-text__date
+.news-item-desc__date
   font-size: 16px
   color: #a1a1a1
 
@@ -721,17 +725,33 @@ button
   display: block
   margin: 0 auto
 
-.faq
+.faq-grid
   display: flex
   flex-wrap: wrap
-  margin-top: -25px
-  margin-left: -100px
+  justify-content: space-between
+  margin-bottom: -40px
+
+.faq-grid__item
+  width: 50%
+  padding-bottom: 40px
+
+.faq-item
+  width: 510px
+
+.faq-item-desc__title
+  font-size: 19px
+  font-family: "PT Sans Bold"
+  line-height: 1.7em
+  margin-bottom: 5px
+
+.faq-item-desc__text
+  font-size: 18px
+  line-height: 1.7em
 
 .faq__item
   width: 50%
   padding-top: 25px
   padding-left: 100px
-  //margin-bottom: 25px
 
 .faq__title
   font-family: "PT Sans Bold", sans-serif
@@ -752,13 +772,6 @@ button
 .social__facebook
   width: 310px
 
-//.instagram
-//  display: flex
-//  flex-wrap: wrap
-//  margin-top: -40px
-//  margin-left: -45px
-
-
 .instagram-grid
   display: flex
   flex-wrap: wrap
@@ -766,7 +779,7 @@ button
   margin-top: -40px
   margin-left: -45px
 
-.instagram__item
+.instagram-grid__item
   width: 50%
   padding-top: 40px
   padding-left: 45px
@@ -779,22 +792,22 @@ button
   width: 100%
   text-align: center
 
-.instagram__image
+.instagram-item__image
   width: 346px
   margin-bottom: 10px
 
-.instagram__title
+.instagram-item__title
   font-family: "PT Sans Bold", sans-serif
   font-size: 17px
   text-transform: uppercase
   margin-bottom: 10px
 
-.instagram__category
+.instagram-item__category
   font-size: 16px
   color: #b1b1b1
   margin-bottom: 10px
 
-.instagram__preview
+.instagram-item__preview
   font-size: 18px
   line-height: 1.7em
 
@@ -804,77 +817,41 @@ button
 .footer-grid
   display: flex
   justify-content: space-between
-  color: #FFFFFF
-  & a
-    color: #FFFFFF
-  & span
-    color: #FFFFFF
+
+.footer-grid__item
+  width: 33.3%
+
+.footer-item
+  width: 285px
+  margin-bottom: -10px
+  font-size: 16px
+  line-height: 1.7em
+
+.footer-item__address
+  padding-bottom: 10px
     
 .footer-grid__item
   color: #FFFFFF
 
-
-.footer-grid__phone-title
+.footer-item-phones__text
   float: left
-  margin-bottom: 15px
+  line-height: 1.7em
 
-.footer-grid__phones
-  float: left
-  margin-left: 15px
+.footer-item-phone__numbers
+  padding-left: 80px
+  line-height: 1.7em
 
-.footer-grid__text
-  display: block
-  margin-bottom: 10px
-
-.footer-phone
-  display: flex
-  flex-wrap: wrap
-
-.footer-phone__text
-  width: 30%
-
-.footer-phone__phones
-  display: flex
-  flex-direction: column
-
-.footer__links
-  width: 300px
-  display: flex
-  flex-direction: column
-
-.footer__social
+.footer-item__social
   text-align: center
+  line-height: 1.7em
 
-.footer-social__text
-  display: block
-  margin-bottom: 15px
-
-.button1
-  position: relative
-  font-family: "PT Sans Narrow Bold", sans-serif
-  color: #FFFFFF
-  font-size: 22px
-  cursor: pointer
-
-.button1__custom
-  position: relative
-  width: 200px
-  min-height: 55px
-  z-index: 2
-  background: linear-gradient(to right, #f44b51, #ff5a60)
-  box-shadow: 0 2px 3px -1px #9a9a9a
-  border-top: 2px solid #ff8c90
-  border-radius: 3px
-  opacity: 1
-  transition: all 0.3s ease 0s
-  &:hover
-    opacity: 0.8
+.footer-item__wrapper
+  line-height: 1.7em
+  margin-bottom: 25px
 
 a
   &:hover
     text-decoration: underline
-
-// Diagnostic page
 
 .button__banner
   width: 287px
@@ -938,7 +915,6 @@ a
   margin-left: 0 !important
   right: 0 !important
   +rotate(180)
-
 
 .section-presentation
   position: relative
