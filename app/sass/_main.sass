@@ -10,6 +10,10 @@ h1, h2, h3, h4, h5, h6
     font-family: "PT Sans Narrow Bold", sans-serif
     font-weight: normal
 
+h2
+    margin-bottom: 30px
+    font-size: 30px
+
 strong, b
     font-family: "PT Sans Bold", sans-serif
     font-weight: normal
@@ -129,20 +133,21 @@ button
 
 .button
     position: relative
-    display: block
-    font-family: "PT Sans Narrow Bold", sans-serif
+    display: inline-block
+    vertical-align: middle
+    font-family: "PT Sans Narrow Bold"
     color: #FFFFFF
     font-size: 22px
     cursor: pointer
-    min-height: 55px
+    text-decoration: none
     background: linear-gradient(to right, #f44b51, #ff5a60)
     box-shadow: 0 2px 3px -1px #9a9a9a
     border-top: 2px solid #ff8c90
     border-radius: 3px
-    opacity: 1
-    transition: all 0.3s ease 0s
+    padding: 12px 25px
+    +trans()
     &:hover
-        opacity: 0.8
+        text-decoration: none
 
 .button__header
     font-size: 18px
@@ -150,9 +155,6 @@ button
     width: 100%
     float: right
 
-.button_slider
-    font-size: 22px
-    width: 287px
 
 .banner-content__button
     text-align: center
@@ -373,7 +375,7 @@ button
 
 .section__title
     text-align: center
-    margin-bottom: 40px
+    margin-bottom: 35px
 
 .section__title_m0
     margin: 0
@@ -482,6 +484,7 @@ button
     font-size: 55px
     margin-bottom: 20px
     font-family: "PT Sans Narrow Bold", sans-serif
+    line-height: 1em
 
 .section-form__descr
     font-size: 22px
@@ -557,13 +560,6 @@ button
 
 .form-request__input
     width: 48%
-
-.form-request__button
-    font-family: "PT Sans Narrow Bold", sans-serif
-    font-size: 22px
-    max-width: 320px
-    width: 100%
-    margin: 0 auto
 
 .list-advantage__title
     font-family: "PT Sans Narrow Bold", sans-serif
