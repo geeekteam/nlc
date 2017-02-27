@@ -253,6 +253,26 @@
         // Do not use jQuery here cause external libs do not loads here...
 
         app.initSwitcher(); // data-switcher="{target='anything'}" , data-switcher-target="anything"
+
+        $(".js-accordion-toggle").click(function(){
+            var accordion = $(this).closest(".js-accordion"),
+                thisItem = $(this).closest('.js-accordion-item'),
+                allItems = accordion.find('.js-accordion-item'),
+                allContent = accordion.find('.js-accordion-content'),
+                thisContent = thisItem.find(".js-accordion-content");
+
+
+            if (thisItem.hasClass('open')) {
+                allContent.stop().slideUp(400);
+                thisItem.removeClass("open");
+
+            } else {
+                allContent.stop().slideUp(400);
+                thisContent.stop().slideDown(400);
+                allItems.removeClass("open");
+                thisItem.addClass("open");
+            }
+        });
     });
 
     app.appLoad('full', function (e) {
