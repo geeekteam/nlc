@@ -340,22 +340,6 @@ button {
   margin-bottom: 25px;
 }
 
-.container_w710px {
-  max-width: 710px;
-}
-
-.container_w780px {
-  max-width: 780px;
-}
-
-.container_w830px {
-  max-width: 830px;
-}
-
-.container_w900px {
-  max-width: 900px;
-}
-
 .header__top {
   padding-top: 15px;
 }
