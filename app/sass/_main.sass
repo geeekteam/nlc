@@ -100,6 +100,12 @@ button
 .container_w900px
     max-width: 900px
 
+.header
+    position: relative
+    z-index: 100
+    box-shadow: 0 0 10px 0 #ccc
+
+
 .header__top
     padding-top: 15px
 
@@ -930,8 +936,9 @@ button
     +sprite(arrow-left, '', 'abs_middle')
     left: auto !important
     margin-left: 0 !important
-    right: 0 !important
     +rotate(180)
+    right: 0 !important
+
 
 .section_bg-choose-us
     background-image: url("../images/choose-us-bg.jpg")

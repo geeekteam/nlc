@@ -376,6 +376,12 @@ button {
   max-width: 900px;
 }
 
+.header {
+  position: relative;
+  z-index: 100;
+  box-shadow: 0 0 10px 0 #ccc;
+}
+
 .header__top {
   padding-top: 15px;
 }
@@ -1603,10 +1609,10 @@ button {
   margin-left: -33px;
   left: auto !important;
   margin-left: 0 !important;
-  right: 0 !important;
   transform: rotate(180deg);
   filter: progid:DXImageTransform.Microsoft.Matrix(M11=$m11, M12=$m12,M21=$m21, M22=$m22, sizingMethod='auto expand');
   zoom: 1;
+  right: 0 !important;
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
   .owl-next {
@@ -1865,4 +1871,9 @@ button.accordion.active, button.accordion:hover {
 }
 .st-content:last-child {
   margin-bottom: 0;
+}
+.st-content img.float-right {
+  margin-bottom: 10px;
+  margin-left: 10px;
+  float: right;
 }
