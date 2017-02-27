@@ -289,7 +289,6 @@ strong, b {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  line-height: 1em;
 }
 
 button {
@@ -338,6 +337,22 @@ button {
 
 .why-korea__title {
   margin-bottom: 25px;
+}
+
+.container_w710px {
+  max-width: 710px;
+}
+
+.container_w780px {
+  max-width: 780px;
+}
+
+.container_w830px {
+  max-width: 830px;
+}
+
+.container_w900px {
+  max-width: 900px;
 }
 
 .header__top {
@@ -786,7 +801,7 @@ button {
 
 .section__title {
   text-align: center;
-  margin-bottom: 10px;
+  margin-bottom: 40px;
 }
 
 .section__title_m0 {
@@ -1201,39 +1216,35 @@ button {
 }
 
 .news-grid__item {
-  width: 50%;
-  padding-bottom: 45px;
+  width: 45%;
+  margin-bottom: 45px;
 }
 
 .news-item {
-  min-height: 134px;
-  width: 510px;
-}
-
-.news__link {
   text-decoration: none;
 }
-
-.news-item-image {
-  width: 134px;
-  height: 134px;
+.news-item:hover .news-item__image {
+  transform: scale(1.2);
 }
 
-.news-item__image {
+.news-item__image-wrap {
   position: absolute;
+  overflow: hidden;
+  width: 134px;
+  height: 134px;
+  border-radius: 50%;
+  border: 4px solid #e1dede;
+  z-index: 1;
 }
 
 .news-item__desc {
   padding-left: 150px;
 }
 
-.news-item-image__image {
-  border-radius: 50%;
-  border-color: #e1dede;
+.news-item__image {
   object-fit: cover;
   position: relative;
-  height: 100%;
-  width: 134px;
+  transition: transform 0.3s;
 }
 
 .news-item-desc {
@@ -1350,9 +1361,25 @@ button {
   text-align: center;
 }
 
-.instagram-item__image {
+.instagram-item {
+  text-decoration: none;
+}
+.instagram-item:hover .instagram-item__image:hover {
+  transform: scale(1.2);
+}
+
+.instagram-item__image-wrap {
+  position: relative;
   width: 346px;
+  height: 253px;
+  overflow: hidden;
   margin-bottom: 10px;
+}
+
+.instagram-item__image {
+  transition: all 0.3s;
+  width: 346px;
+  height: 253px;
 }
 
 .instagram-item__title {
@@ -1423,10 +1450,6 @@ button {
 .footer-item__wrapper {
   line-height: 1.7em;
   margin-bottom: 25px;
-}
-
-a:hover {
-  text-decoration: underline;
 }
 
 .button__banner {
@@ -1590,15 +1613,6 @@ a:hover {
   }
 }
 
-.section-presentation {
-  position: relative;
-  background-image: url("../images/presentation-bg1.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  -webkit-background-size: cover;
-  color: #fff;
-}
-
 button.accordion {
   background-color: #eee;
   color: #444;
@@ -1676,4 +1690,63 @@ button.accordion.active, button.accordion:hover {
 }
 .table__td:nth-child(4) {
   width: 180px;
+}
+
+.section-presentation {
+  position: relative;
+  background-image: url("../images/presentation-bg1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  color: #fff;
+}
+
+.section-presentation__title {
+  margin-bottom: 35px;
+}
+
+.section-presentation__descr {
+  font-size: 20px;
+  line-height: 1.5em;
+  margin-bottom: 35px;
+}
+
+.grid {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.grid_presentation .grid__item {
+  padding: 0 20px;
+}
+.grid_presentation .grid__item:first-child {
+  padding-left: 0;
+}
+.grid_presentation .grid__item:last-child {
+  padding-right: 0;
+}
+
+.presentation-item {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.presentation-item__number {
+  font-family: "PT Sans Narrow Bold";
+  font-size: 60px;
+  margin-right: 10px;
+}
+
+.presentation-item__descr {
+  font-size: 22px;
+  font-family: "PT Sans Narrow Bold";
+}
+
+.section-presentation__footer {
+  padding: 25px 0;
+  border-top: 1px solid #fff;
 }

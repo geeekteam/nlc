@@ -31,7 +31,6 @@ strong, b
     box-sizing: border-box
     padding: 0
     margin: 0
-    line-height: 1em
 
 button
     border: none
@@ -374,7 +373,7 @@ button
 
 .section__title
     text-align: center
-    margin-bottom: 10px
+    margin-bottom: 40px
 
 .section__title_m0
     margin: 0
@@ -667,33 +666,35 @@ button
     margin-bottom: -45px
 
 .news-grid__item
-    width: 50%
-    padding-bottom: 45px
+    width: 45%
+    margin-bottom: 45px
 
 .news-item
-    min-height: 134px
-    width: 510px
-
-.news__link
     text-decoration: none
+    &:hover
+        .news-item__image
+            -webkit-transform: scale(1.2)
+            -moz-transform: scale(1.2)
+            -ms-transform: scale(1.2)
+            -o-transform: scale(1.2)
+            transform: scale(1.2)
 
-.news-item-image
+.news-item__image-wrap
+    position: absolute
+    overflow: hidden
     width: 134px
     height: 134px
-
-.news-item__image
-    position: absolute
+    border-radius: 50%
+    border: 4px solid #e1dede
+    z-index: 1
 
 .news-item__desc
     padding-left: 150px
 
-.news-item-image__image
-    border-radius: 50%
-    border-color: #e1dede
+.news-item__image
     object-fit: cover
     position: relative
-    height: 100%
-    width: 134px
+    transition: transform 0.3s
 
 .news-item-desc
     min-height: 134px
@@ -764,13 +765,6 @@ button
 .social__facebook
     width: 310px
 
-//.instagram
-//  display: flex
-//  flex-wrap: wrap
-//  margin-top: -40px
-//  margin-left: -45px
-
-
 .instagram-grid
     display: flex
     flex-wrap: wrap
@@ -791,9 +785,28 @@ button
     width: 100%
     text-align: center
 
-.instagram-item__image
+.instagram-item
+    text-decoration: none
+    &:hover
+        .instagram-item__image
+            &:hover
+                -webkit-transform: scale(1.2)
+                -moz-transform: scale(1.2)
+                -ms-transform: scale(1.2)
+                -o-transform: scale(1.2)
+                transform: scale(1.2)
+
+.instagram-item__image-wrap
+    position: relative
     width: 346px
+    height: 253px
+    overflow: hidden
     margin-bottom: 10px
+
+.instagram-item__image
+    transition: all 0.3s
+    width: 346px
+    height: 253px
 
 .instagram-item__title
     font-family: "PT Sans Bold", sans-serif
@@ -847,10 +860,6 @@ button
 .footer-item__wrapper
     line-height: 1.7em
     margin-bottom: 25px
-
-a
-    &:hover
-        text-decoration: underline
 
 .button__banner
     width: 287px
@@ -916,5 +925,3 @@ a
     margin-left: 0 !important
     right: 0 !important
     +rotate(180)
-
-
