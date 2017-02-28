@@ -277,9 +277,17 @@
 
     app.appLoad('full', function (e) {
         $('.main-slider').owlCarousel({
-            nav: true,
             loop: true,
-            items: 1
+            items: 1,
+            responsive : {
+                0 : {
+                    nav: false
+                },
+                767 : {
+                    nav: true
+                }
+
+            }
         });
 
         $('.review-slider').owlCarousel({

@@ -952,11 +952,25 @@ button
     line-height: 1.7em
     color: #FFFFFF
 
+.grid-elems-2_diagnostic
+    color: #333
+    font-size: 17px
+
 .grid-elems-2__content
     width: 45%
 
 .grid-elems-2__read-more
     font-size: 16px
+
+.grid-elems-4
+    display: flex
+    justify-content: space-between
+    font-size: 17px
+    line-height: 1.7em
+    color: #333
+
+.grid-elems-4__content
+    width: 22%
 
 .section-item__title
     text-align: center
@@ -991,7 +1005,6 @@ button
             top: 7px
             left: 0
 
-
 .section-item-grid__contacts
     width: 30%
 
@@ -1000,20 +1013,21 @@ button
     background-size: cover
     -webkit-background-size: cover
     color: #FFFFFF
-    padding: 25px 0px
 
 .section-contacts__header
     font-family: "PT Sans Narrow Bold"
     font-size: 30px
     text-align: center
     border-bottom: 1px solid #FFFFFF
-    padding: 0 15px 15px 15px
+    padding: 25px 15px 15px 15px
     margin-bottom: 25px
+
+.section-contacts__body
+    padding: 0 15px 25px
 
 .section-contacts__line
     text-align: center
     margin-bottom: 40px
-    padding: 0 15px
     &:last-child
         margin-bottom: 0
 
@@ -1041,26 +1055,24 @@ button
         font-size: 25px
         font-family: "PT Sans Narrow Bold"
 
-.confidential__subtitle
-    padding: 25px 0
 
-    .tab-fz40
-        display: none
-
-    .tab-fz35
-        display: none
-
-    .tab-fz30
-        display: none
-
-    .tab-fz20
-        display: none
-
-    .tab-fz18
-        display: none
-
-    .tab-fz14
-        display: none
-        
-    .tab-fz12
-        display: none
+.custom-marker-list
+    li
+        position: relative
+        line-height: 1.7em
+        list-style-type: none
+        padding-left: 20px
+        margin-bottom: 15px
+        &::before
+            content: "\2014"
+            position: absolute
+            left: 0
+    ol li
+        padding-left: 5px
+        list-style-type: decimal
+        margin-left: 90px
+        margin-bottom: 0
+        &::before
+            content: ''
+        &:last-child
+            margin-bottom: 0

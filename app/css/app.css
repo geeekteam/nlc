@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url(../css/fonts.css);
 .mb10 {
   margin-bottom: 10px;
@@ -1430,12 +1431,31 @@ button {
   color: #FFFFFF;
 }
 
+.grid-elems-2_diagnostic {
+  color: #333;
+  font-size: 17px;
+}
+
 .grid-elems-2__content {
   width: 45%;
 }
 
 .grid-elems-2__read-more {
   font-size: 16px;
+}
+
+.grid-elems-4 {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  font-size: 17px;
+  line-height: 1.7em;
+  color: #333;
+}
+
+.grid-elems-4__content {
+  width: 22%;
 }
 
 .section-item__title {
@@ -1497,7 +1517,6 @@ button {
   background-size: cover;
   -webkit-background-size: cover;
   color: #FFFFFF;
-  padding: 25px 0px;
 }
 
 .section-contacts__header {
@@ -1505,14 +1524,17 @@ button {
   font-size: 30px;
   text-align: center;
   border-bottom: 1px solid #FFFFFF;
-  padding: 0 15px 15px 15px;
+  padding: 25px 15px 15px 15px;
   margin-bottom: 25px;
+}
+
+.section-contacts__body {
+  padding: 0 15px 25px;
 }
 
 .section-contacts__line {
   text-align: center;
   margin-bottom: 40px;
-  padding: 0 15px;
 }
 .section-contacts__line:last-child {
   margin-bottom: 0;
@@ -1546,29 +1568,29 @@ button {
   font-family: "PT Sans Narrow Bold";
 }
 
-.confidential__subtitle {
-  padding: 25px 0;
+.custom-marker-list li {
+  position: relative;
+  line-height: 1.7em;
+  list-style-type: none;
+  padding-left: 20px;
+  margin-bottom: 15px;
 }
-.confidential__subtitle .tab-fz40 {
-  display: none;
+.custom-marker-list li::before {
+  content: "—";
+  position: absolute;
+  left: 0;
 }
-.confidential__subtitle .tab-fz35 {
-  display: none;
+.custom-marker-list ol li {
+  padding-left: 5px;
+  list-style-type: decimal;
+  margin-left: 90px;
+  margin-bottom: 0;
 }
-.confidential__subtitle .tab-fz30 {
-  display: none;
+.custom-marker-list ol li::before {
+  content: "";
 }
-.confidential__subtitle .tab-fz20 {
-  display: none;
-}
-.confidential__subtitle .tab-fz18 {
-  display: none;
-}
-.confidential__subtitle .tab-fz14 {
-  display: none;
-}
-.confidential__subtitle .tab-fz12 {
-  display: none;
+.custom-marker-list ol li:last-child {
+  margin-bottom: 0;
 }
 
 button.accordion {
@@ -1753,12 +1775,21 @@ button.accordion.active, button.accordion:hover {
     max-width: 100%;
   }
 
-  .why-korea {
-    padding-left: 0;
-  }
-
   .why-korea__title {
     text-align: center;
+  }
+
+  .why-korea {
+    padding: 0;
+  }
+  .why-korea:before {
+    left: auto;
+    right: -120px;
+    bottom: -95px;
+  }
+
+  .why-korea__content {
+    max-width: 550px;
   }
 
   .tab-fz40 {
@@ -1827,5 +1858,23 @@ button.accordion.active, button.accordion:hover {
 
   .main-slider__content {
     padding: 31px 15px;
+  }
+
+  .main-slider__content {
+    padding: 30px 0 60px 0;
+    max-width: 100%;
+  }
+
+  .form-request__inputs {
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .form-request__input {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .form-request__input:last-child {
+    margin-bottom: 0;
   }
 }
