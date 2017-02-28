@@ -254,6 +254,26 @@
 
         app.initSwitcher(); // data-switcher="{target='anything'}" , data-switcher-target="anything"
 
+        $(".js-toggle-menu").click(function(){
+            $(".js-mobile-menu").addClass("open");
+            $(".js-overlay").addClass("open");
+        });
+
+        $(".js-overlay").click(function(){
+            $(".js-mobile-menu").removeClass("open");
+            $(".js-overlay").removeClass("open");
+        });
+
+
+        $(".js-dropmenu-button").click(function(e){
+            e.preventDefault();
+
+            var thisItem = $(this).closest(".js-dropmenu-item ");
+
+            thisItem.find(".js-dropmenu-content").slideToggle(400);
+
+        });
+
         $(".js-accordion-toggle").click(function(){
             var accordion = $(this).closest(".js-accordion"),
                 thisItem = $(this).closest('.js-accordion-item'),
