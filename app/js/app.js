@@ -313,7 +313,16 @@
         $('.review-slider').owlCarousel({
             nav: true,
             loop: true,
-            items: 1
+            items: 1,
+            responsive : {
+                0 : {
+                    nav: false
+                },
+                900 : {
+                    nav: true
+                }
+
+            }
         });
 
         $('.say-about').owlCarousel({

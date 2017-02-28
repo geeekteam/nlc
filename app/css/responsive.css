@@ -3,6 +3,41 @@
     padding: 62px 140px;
   }
 }
+@media screen and (max-width: 890px) {
+  .why-korea {
+    padding: 0;
+  }
+  .why-korea:before {
+    display: none;
+  }
+
+  .why-korea__content {
+    width: 500px;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 900px) {
+  .owl-carousel {
+    padding: 0;
+  }
+}
+@media screen and (max-width: 525px) {
+  .why-korea__content {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .list-advantage__item {
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  .list-advantage__text {
+    text-align: center;
+  }
+}
 @media screen and (max-width: 991px) {
   .main-slider__content {
     padding: 62px 140px;
@@ -18,7 +53,7 @@
   }
   .why-korea:before {
     left: auto;
-    right: -120px;
+    right: -150px;
     bottom: -95px;
   }
 
