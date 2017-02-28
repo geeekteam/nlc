@@ -281,7 +281,6 @@ button
 .main-slider__content
     position: static
     padding: 62px 0
-    max-width: 650px
 
 .main-slider__title
     font-family: "PT Sans Narrow Bold", sans-serif
@@ -673,6 +672,9 @@ button
 .say-about-grid__item
     padding: 40px 0 0 43px
 
+.say-about-grid__image
+    width: 100%
+
 .news-grid
     display: flex
     flex-wrap: wrap
@@ -739,11 +741,8 @@ button
     margin-bottom: -40px
 
 .faq-grid__item
-    width: 50%
+    width: 45%
     padding-bottom: 40px
-
-.faq-item
-    width: 510px
 
 .faq-item-desc__title
     font-size: 19px
@@ -812,15 +811,17 @@ button
 
 .instagram-item__image-wrap
     position: relative
-    width: 346px
-    height: 253px
+    max-width: 346px
+    max-height: 253px
     overflow: hidden
     margin-bottom: 10px
+    width: 100%
 
 .instagram-item__image
     transition: all 2s ease 0s
-    width: 346px
-    height: 253px
+    max-width: 346px
+    max-height: 253px
+    width: 100%
 
 .instagram-item__title
     font-family: "PT Sans Bold", sans-serif
@@ -944,17 +945,17 @@ button
 .section_bg-choose-us
     background-image: url("../images/choose-us-bg.jpg")
 
-.be-silent
+.grid-elems-2
     display: flex
     justify-content: space-between
     font-size: 20px
     line-height: 1.7em
     color: #FFFFFF
 
-.be-silent__content
+.grid-elems-2__content
     width: 45%
 
-.be-silent__read-more
+.grid-elems-2__read-more
     font-size: 16px
 
 .section-item__title
@@ -965,39 +966,101 @@ button
     text-align: center
     margin-bottom: 45px
 
-.section-item__content
-    font-size: 17px
-    p
-        margin-bottom: 30px
+.section__item
+    margin-bottom: 60px
+    &:last-child
+        margin-bottom: 0
 
 .section-item-grid
     display: flex
     justify-content: space-between
 
 .section-item-grid__content
-    width: 70%
+    width: 60%
     font-size: 19px
+    li
+        position: relative
+        margin-bottom: 25px
+        line-height: 1.7em
+        list-style-type: none
+        padding-left: 34px
+        &::before
+            content: ""
+            +sprite(list-marker)
+            position: absolute
+            top: 7px
+            left: 0
+
 
 .section-item-grid__contacts
-    width: 20%
+    width: 30%
 
 .section-contacts
-    width: 368px
-    height: 423px
     background: url("../images/section-contacts-bg.jpg") no-repeat center
+    background-size: cover
+    -webkit-background-size: cover
+    color: #FFFFFF
+    padding: 25px 0px
 
 .section-contacts__header
     font-family: "PT Sans Narrow Bold"
     font-size: 30px
-    color: #FFFFFF
-    padding: 25px 15px
     text-align: center
+    border-bottom: 1px solid #FFFFFF
+    padding: 0 15px 15px 15px
+    margin-bottom: 25px
 
-.section-contacts__body
+.section-contacts__line
     text-align: center
-    padding: 25px 15px
+    margin-bottom: 40px
+    padding: 0 15px
+    &:last-child
+        margin-bottom: 0
 
-.section-contacts__phone
-    font-family: "PT Sans Regular", sans-serif
+.section-contacts__link
+    text-decoration: none
 
-.section-contacts__name
+.section-contacts__text
+    font-family: "PT Sans Bold"
+
+.mission
+    padding-left: 400px
+    position: relative
+    &:before
+        content: ''
+        background: url('../images/mission.png') no-repeat center center
+        -webkit-background-size: contain
+        background-size: contain
+        width: 493px
+        height: 561px
+        position: absolute
+        left: -100px
+        bottom: -75px
+        z-index: 10
+    strong
+        font-size: 25px
+        font-family: "PT Sans Narrow Bold"
+
+.confidential__subtitle
+    padding: 25px 0
+
+    .tab-fz40
+        display: none
+
+    .tab-fz35
+        display: none
+
+    .tab-fz30
+        display: none
+
+    .tab-fz20
+        display: none
+
+    .tab-fz18
+        display: none
+
+    .tab-fz14
+        display: none
+        
+    .tab-fz12
+        display: none

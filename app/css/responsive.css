@@ -1,0 +1,87 @@
+@media screen and (max-width: 1370px) {
+  .main-slider__content {
+    padding: 62px 140px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .main-slider__content {
+    padding: 62px 140px;
+    max-width: 100%;
+  }
+
+  .why-korea {
+    padding-left: 0;
+  }
+
+  .why-korea__title {
+    text-align: center;
+  }
+
+  .tab-fz40 {
+    font-size: 40px;
+  }
+
+  .tab-fz35 {
+    font-size: 35px;
+  }
+
+  .tab-fz30 {
+    font-size: 30px;
+  }
+
+  .tab-fz25 {
+    font-size: 25px;
+  }
+
+  .tab-fz20 {
+    font-size: 20px;
+  }
+
+  .tab-fz18 {
+    font-size: 18px;
+  }
+
+  .tab-fz14 {
+    font-size: 14px;
+  }
+
+  .tab-fz12 {
+    font-size: 12px;
+  }
+
+  .main-slider__title br, .main-slider__subtitle br, .main-slider__text br {
+    display: none;
+  }
+
+  .review-slider__right {
+    text-align: right;
+  }
+
+  .review-slider__place {
+    margin: 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .section-grid {
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+  .section-grid__item {
+    margin-bottom: 15px;
+  }
+  .section-grid__item:last-child {
+    margin-bottom: 0;
+  }
+  .section-grid__item::before {
+    display: none;
+  }
+
+  .main-slider__content {
+    padding: 31px 15px;
+  }
+}
