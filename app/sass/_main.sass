@@ -6,6 +6,12 @@ body
 a
     color: inherit
 
+.site-wrapper
+    width: 100%
+    min-width: 320px
+    overflow: hidden
+
+
 h1, h2, h3, h4, h5, h6
     font-family: "PT Sans Narrow Bold", sans-serif
     font-weight: normal
@@ -1055,13 +1061,21 @@ button
         font-family: "PT Sans Narrow Bold"
 
 
-.custom-marker-list
+
+.custom-ol-list
+    list-style: none
+    & > li
+        margin-bottom: 30px
+    & > li:last-child
+        margin-bottom: 0
+
+ul
     li
         position: relative
         line-height: 1.7em
         list-style-type: none
         padding-left: 20px
-        margin-bottom: 15px
+        margin-bottom: 10px
         &::before
             content: "\2014"
             position: absolute
