@@ -1683,7 +1683,7 @@ button.accordion.active, button.accordion:hover {
   width: 100%;
   line-height: 1.2em;
   margin-bottom: 35px;
-  overflow-x: auto;
+  overflow-y: auto;
 }
 .table strong, table strong {
   font-size: 20px;
