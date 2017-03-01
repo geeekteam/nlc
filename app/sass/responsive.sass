@@ -1,57 +1,27 @@
 @media screen and (max-width: 1370px)
-
 	.main-slider__content
 		padding: 62px 140px
 
-@media screen and (max-width: 890px)
-	.why-korea
+@media screen and (max-width: 1075px)
+	.say-about-grid
+		margin: 0
+
+	.say-about-grid__item
 		padding: 0
-		&:before
-			display: none
-
-	.why-korea__content
-		width: 500px
-		margin: 0 auto
-
-@media screen and (max-width: 900px)
-	.owl-carousel
-		padding: 0
-
-
-@media screen and (max-width: 525px)
-
-	.why-korea__content
 		width: 100%
-		margin: 0 auto
+		
+	.tab-display-none
+		display: none
 
-	.list-advantage__item
-		flex-direction: column
-		justify-content: center
 
-	.list-advantage__text
-		text-align: center
+	.owl-prev, .owl-next
+		+sprite(mobile-nav, '', 'abs_middle')
+
 
 @media screen and (max-width: 991px)
 
-	.main-slider__content
-		padding: 62px 140px
-		max-width: 100%
-
-	.why-korea__title
-		text-align: center
-
-	.why-korea
-		padding: 0
-		&:before
-			left: auto
-			right: -150px
-			bottom: -95px
-
-	.why-korea__content
-		max-width: 550px
-
 	.tab-fz40
-		font-size: 40px
+	font-size: 40px
 
 	.tab-fz35
 		font-size: 35px
@@ -74,6 +44,29 @@
 	.tab-fz12
 		font-size: 12px
 
+	.section
+		padding: 30px 0
+
+	.section-form
+		padding: 30px 0
+
+	.main-slider__content
+		padding: 62px 140px
+		max-width: 100%
+
+	.why-korea__title
+		text-align: center
+
+	.why-korea
+		padding: 0
+		&:before
+			left: auto
+			right: -150px
+			bottom: -95px
+
+	.why-korea__content
+		max-width: 550px
+
 	.main-slider__title br, .main-slider__subtitle br, .main-slider__text br
 		display: none
 
@@ -83,8 +76,112 @@
 	.review-slider__place
 		margin: 0
 
+	.news-item__image-wrap
+		width: 100px
+		height: 100px
+
+	.news-item-desc
+		min-height: 100px
+
+	.news-item__desc
+		padding-left: 120px
+
+	.footer-grid__item
+		margin: 0 auto 30px auto
+		&:last-child
+			margin-bottom: 0
+
+	.footer-item__wrapper
+		margin-bottom: 10px
+
+	.custom-ol-list
+		h2
+			font-size: 20px
+
+	.st-content
+		font-size: 18px
+		h2
+			font-size: 20px
+
+	.grid_presentation
+		.presentation-item__descr
+			font-size: 18px
+			line-height: 1em
+		.presentation-item__number
+			font-size: 40px
+
+@media screen and (max-width: 900px)
+
+	.owl-carousel
+		padding: 0
+
+	.mission
+		position: relative
+		padding-left: 0
+		width: 450px
+		&::before
+			left: auto
+			right: -430px
+
+@media screen and (max-width: 800px)
+
+	.mission
+		&::before
+			right: -400px
+
+@media screen and (max-width: 700px)
+
+	.mission
+		width: 100%
+		&::before
+			display: none
+
+
+@media screen and (max-width: 890px)
+
+	.why-korea
+		padding: 0
+		&:before
+			display: none
+
+	.why-korea__content
+		width: 500px
+		margin: 0 auto
+
 
 @media screen and (max-width: 767px)
+
+	.grid_presentation
+		flex-direction: column
+		align-items: center
+		.grid__item
+			padding: 0
+		&:first-child
+			padding: 0
+		&:last-child
+			padding: 0
+
+	.presentation-item
+		width: 220px
+
+
+	.st-content
+		font-size: 14px
+
+	.mob-fz30
+		font-size: 30px
+
+	.mob-fz25
+		font-size: 25px
+
+	.mov-fz20
+		font-size: 20px
+
+	.mob-fz18
+		font-size: 18px
+
+	.mob-fz14
+		font-size: 14px
 
 	.section-grid
 		flex-direction: column
@@ -113,3 +210,155 @@
 		margin-bottom: 15px
 		&:last-child
 			margin-bottom: 0
+
+	.review-slider__content
+		display: flex
+		flex-direction: column
+		flex-wrap: wrap
+		align-items: center
+		padding: 0
+
+	.review-slider__photo
+		position: relative
+		margin: 0
+
+	.news-grid__item
+		width: 100%
+		display: flex
+		flex-direction: column
+		justify-content: center
+		align-items: center
+
+	.news-item__desc
+		padding-top: 10px
+		padding-left: 0
+		text-align: center
+
+	.news-item__image-wrap
+		position: relative
+
+	.faq-grid__item
+		width: 100%
+
+	.list-advantage__icon
+		margin-right: 0
+		margin-bottom: 10px
+
+	.social
+		flex-direction: column
+		align-items: center
+
+	.social__instagram
+		width: 100%
+		margin-bottom: 30px
+
+	.social__facebook
+		width: 100%
+
+	.instagram-grid
+		margin-top: 0
+		margin-left: 0
+
+	.instagram-grid__item
+		width: 100%
+		padding-top: 0
+		padding-left: 0
+		margin-bottom: 25px
+		&:last-child
+			margin-bottom: 0
+
+	.social__title
+		font-family: "PT Sans Narrow Bold", sans-serif
+		font-size: 50px
+		margin-bottom: 40px
+		width: 100%
+		text-align: center
+
+	.instagram-item
+		align-items: center
+
+	.instagram-item__text
+		text-align: center
+
+	.instagram-item__image-wrap
+		position: relative
+		max-width: 346px
+		max-height: 253px
+		overflow: hidden
+		margin-bottom: 10px
+		width: 100%
+
+	.facebook__item
+		text-align: center
+
+	.footer-grid
+		flex-direction: column
+		align-items: center
+
+	.footer-grid__item
+		text-align: center
+		width: 100%
+
+	.footer-item-phone__numbers
+		padding: 0
+
+	.footer-item-phones__text
+		float: none
+
+	.footer-item__wrapper
+		margin-bottom: 15px
+
+	.footer-grid__item
+		margin-bottom: 30px
+		&:last-child
+			margin-bottom: 0
+
+	.grid_elems-2
+		flex-direction: column
+		.grid__item
+			width: 100%
+
+	.section-item-grid
+		flex-direction: column
+		align-items: center
+
+	.section-item-grid__content
+		width: 100%
+
+	.section-item-grid__contacts
+		width: 50%
+
+	.mission__content
+		font-size: 14px
+		strong
+			font-size: 15px
+
+	.custom-ol-list
+		h2
+			font-size: 18px
+
+@media screen and (max-width: 525px)
+
+	.why-korea__content
+		width: 100%
+		margin: 0 auto
+
+	.list-advantage__item
+		flex-direction: column
+		justify-content: center
+
+	.list-advantage__text
+		text-align: center
+
+
+@media screen and (max-width: 500px)
+
+	.review-slider__header
+		flex-direction: column
+		align-items: center
+
+	.review-slider__date
+		padding-left: 10px
+
+	.section-item-grid__contacts
+		width: 100%

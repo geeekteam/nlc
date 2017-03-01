@@ -713,6 +713,8 @@ button
     padding-left: 150px
 
 .news-item__image
+    width: 134px
+    height: 134px
     object-fit: cover
     position: relative
     transition: transform 0.3s
@@ -805,6 +807,8 @@ button
 
 .instagram-item
     text-decoration: none
+    display: flex
+    flex-direction: column
     &:hover
         .instagram-item__image
             -webkit-transform: scale(1.2)
@@ -828,6 +832,9 @@ button
     max-height: 253px
     width: 100%
 
+.instagram-item__text
+    max-width: 346px
+
 .instagram-item__title
     font-family: "PT Sans Bold", sans-serif
     font-size: 17px
@@ -849,13 +856,12 @@ button
 .footer-grid
     display: flex
     justify-content: space-between
+    flex-wrap: wrap
 
 .footer-grid__item
     width: 33.3%
 
 .footer-item
-    width: 285px
-    margin-bottom: -10px
     font-size: 16px
     line-height: 1.7em
 
@@ -864,6 +870,8 @@ button
 
 .footer-grid__item
     color: #FFFFFF
+    width: 285px
+    margin-bottom: -10px
 
 .footer-item-phones__text
     float: left
@@ -949,22 +957,18 @@ button
 
 .section_bg-choose-us
     background-image: url("../images/choose-us-bg.jpg")
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: center
 
-.grid-elems-2
-    display: flex
-    justify-content: space-between
+.grid_elems-2
     font-size: 20px
     line-height: 1.7em
     color: #FFFFFF
+    .grid__item
+        width: 45%
 
-.grid-elems-2_diagnostic
-    color: #333
-    font-size: 17px
-
-.grid-elems-2__content
-    width: 45%
-
-.grid-elems-2__read-more
+.grid__item_read-more
     font-size: 16px
 
 .grid-elems-4
@@ -1014,10 +1018,13 @@ button
     width: 30%
 
 .section-contacts
+    color: #FFFFFF
+
+.section__contacts
     background: url("../images/section-contacts-bg.jpg") no-repeat center
     background-size: cover
     -webkit-background-size: cover
-    color: #FFFFFF
+    width: 100%
 
 .section-contacts__header
     font-family: "PT Sans Narrow Bold"
@@ -1060,6 +1067,16 @@ button
         font-size: 25px
         font-family: "PT Sans Narrow Bold"
 
+.mission__content
+    position: relative
+    z-index: 20
+    font-size: 17px
+    line-height: 1.5em
+    p
+        margin-bottom: 30px
+        &:last-child
+            margin-bottom: 0
+
 .custom-ol-list
     list-style: none
     & > li
@@ -1088,3 +1105,15 @@ button
                 content: ''
             &:last-child
                 margin-bottom: 0
+
+.custom-ul-list
+    li
+        position: relative
+        line-height: 1.7em
+        list-style-type: none
+        padding-left: 20px
+        margin-bottom: 10px
+        &::before
+            content: "\2014"
+            position: absolute
+            left: 0

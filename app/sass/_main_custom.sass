@@ -33,6 +33,7 @@ button.accordion.active, button.accordion:hover
     width: 100%
     line-height: 1.2em
     margin-bottom: 35px
+    overflow-x: auto
     strong
         font-size: 20px
 
@@ -131,6 +132,7 @@ button.accordion.active, button.accordion:hover
         margin-bottom: 10px
         margin-left: 10px
         float: right
+        max-width: 100%
 
 
 .button-hamburger
@@ -182,6 +184,9 @@ button.accordion.active, button.accordion:hover
 .main-header__menu-button
     display: none
 
+.mobile-menu
+    display: none
+
 @media screen and (max-width: 991px)
     .main-header__logo
         flex-basis: 180px
@@ -199,6 +204,7 @@ button.accordion.active, button.accordion:hover
         display: none
 
     .mobile-menu
+        display: block
         height: 100%
         left: -320px
         top: 0
