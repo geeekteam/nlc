@@ -241,6 +241,7 @@ button {
 .why-korea:before {
   content: "";
   background: url("../images/doctor.png") no-repeat center center;
+  -webkit-background-size: contain;
   background-size: contain;
   width: 683px;
   height: 755px;
@@ -286,16 +287,12 @@ button {
 }
 
 .main-header {
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: justify;
   justify-content: space-between;
-  -ms-flex-align: center;
   align-items: center;
 }
 
 .main-header__logo {
-  -ms-flex-preferred-size: 286px;
   flex-basis: 286px;
 }
 
@@ -331,7 +328,6 @@ button {
 }
 
 .main-header__button {
-  -ms-flex-preferred-size: 286px;
   flex-basis: 286px;
 }
 
@@ -353,6 +349,9 @@ button {
   border-top: 2px solid #ff8c90;
   border-radius: 3px;
   padding: 12px 25px;
+  -webkit-transition: all 0.5s ease 0s;
+  -moz-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
   transition: all 0.5s ease 0s;
 }
 .button:hover {
@@ -371,9 +370,7 @@ button {
 }
 
 .main-menu {
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: justify;
   justify-content: space-between;
   list-style: none;
   font-size: 18px;
@@ -463,6 +460,9 @@ button {
   margin-top: -59.5px;
   margin-left: -20px;
   font-size: 0;
+  -webkit-transition: all 0.5s ease 0s;
+  -moz-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
   transition: all 0.5s ease 0s;
 }
 .main-slider .owl-prev:hover, .main-slider .owl-next:hover {
@@ -502,6 +502,10 @@ button {
   left: auto !important;
   margin-left: 0 !important;
   right: 75px !important;
+  -moz-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
   transform: rotate(180deg);
   filter: progid:DXImageTransform.Microsoft.Matrix(M11=$m11, M12=$m12,M21=$m21, M22=$m22, sizingMethod='auto expand');
   zoom: 1;
@@ -520,6 +524,9 @@ button {
   width: 13px;
   height: 13px;
   border-radius: 50%;
+  -webkit-transition: all 0.5s ease 0s;
+  -moz-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
   transition: all 0.5s ease 0s;
   background-color: #fff;
   border: 3px solid #fff;
@@ -560,6 +567,7 @@ button {
 
 .main-slider__slide {
   position: relative;
+  -webkit-background-size: cover;
   background-size: cover;
 }
 
@@ -740,9 +748,7 @@ button {
 }
 
 .section-grid {
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 
@@ -773,12 +779,9 @@ button {
 }
 
 .section-grid__icon {
-  display: -ms-flexbox;
   display: flex;
   height: 100%;
-  -ms-flex-align: center;
   align-items: center;
-  -ms-flex-pack: center;
   justify-content: center;
 }
 
@@ -892,6 +895,9 @@ button {
   left: 50%;
   margin-top: -5.5px;
   margin-left: -8px;
+  -webkit-transition: all 0.5s ease 0s;
+  -moz-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
   transition: all 0.5s ease 0s;
   opacity: 0;
 }
@@ -906,6 +912,10 @@ button {
 }
 
 .st-label__checkbox {
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
   transform: translateY(-50%);
   top: 50%;
   position: absolute;
@@ -921,9 +931,7 @@ button {
 }
 
 .form-request__inputs {
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 
@@ -939,9 +947,7 @@ button {
 }
 
 .list-advantage__item {
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-align: center;
   align-items: center;
   max-width: 650px;
   width: 100%;
@@ -952,18 +958,14 @@ button {
 }
 
 .list-advantage__icon {
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: center;
   justify-content: center;
-  -ms-flex-align: center;
   align-items: center;
   background-color: #fe6268;
   width: 62px;
   height: 62px;
   margin-right: 20px;
   border-radius: 50%;
-  -ms-flex-negative: 0;
   flex-shrink: 0;
 }
 
@@ -992,6 +994,9 @@ button {
   width: 13px;
   height: 13px;
   border-radius: 50%;
+  -webkit-transition: all 0.5s ease 0s;
+  -moz-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
   transition: all 0.5s ease 0s;
   background-color: #fff;
   border: 3px solid #fff;
@@ -1034,11 +1039,8 @@ button {
 }
 
 .review-slider__header {
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: justify;
   justify-content: space-between;
-  -ms-flex-align: end;
   align-items: flex-end;
   font-family: "PT Sans Bold", sans-serif;
   border-bottom: 2px solid #fe6268;
@@ -1048,7 +1050,6 @@ button {
 
 .review-slider__name {
   font-size: 20px;
-  -ms-flex-positive: 1;
   flex-grow: 1;
 }
 
@@ -1079,6 +1080,9 @@ button {
   width: 13px;
   height: 13px;
   border-radius: 50%;
+  -webkit-transition: all 0.5s ease 0s;
+  -moz-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
   transition: all 0.5s ease 0s;
   background-color: #fff;
   border: 3px solid #fff;
@@ -1093,11 +1097,8 @@ button {
 }
 
 .say-about-grid {
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  -ms-flex-pack: justify;
   justify-content: space-between;
   margin-bottom: -45px;
 }
@@ -1112,11 +1113,8 @@ button {
 }
 
 .news-grid {
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  -ms-flex-pack: justify;
   justify-content: space-between;
   margin-bottom: -45px;
 }
@@ -1130,6 +1128,10 @@ button {
   text-decoration: none;
 }
 .news-item:hover .news-item__image {
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
   transform: scale(1.2);
 }
 
@@ -1182,11 +1184,8 @@ button {
 }
 
 .faq-grid {
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  -ms-flex-pack: justify;
   justify-content: space-between;
   margin-bottom: -40px;
 }
@@ -1226,14 +1225,13 @@ button {
 }
 
 .social {
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 
 .social__instagram {
   width: 785px;
+  margin-bottom: -40px;
 }
 
 .social__facebook {
@@ -1241,14 +1239,10 @@ button {
 }
 
 .instagram-grid {
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  -ms-flex-pack: justify;
   justify-content: space-between;
   width: 100%;
-  margin-bottom: -40px;
 }
 
 .instagram-grid__item {
@@ -1267,12 +1261,13 @@ button {
 
 .instagram-item {
   text-decoration: none;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-direction: column;
   flex-direction: column;
 }
 .instagram-item:hover .instagram-item__image {
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
   transform: scale(1.2);
   -o-transform: scale(1.2);
 }
@@ -1316,30 +1311,30 @@ button {
 }
 
 .facebook__item {
-  -ms-flex-item-align: center;
-  -ms-grid-row-align: center;
   align-self: center;
 }
 
+.facebook__image {
+  max-width: 308px;
+  width: 100%;
+}
+
 .footer-grid {
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: justify;
   justify-content: space-between;
-  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
 
 .footer-grid__wrapper-left {
-  width: 785px;
-  display: -ms-flexbox;
+  max-width: 785px;
+  width: 100%;
   display: flex;
-  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 
 .footer-grid__wrapper-right {
-  width: 310px;
+  max-width: 310px;
+  width: 100%;
 }
 
 .footer-item {
@@ -1368,12 +1363,9 @@ button {
 }
 
 .footer-item-phones-grid {
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: justify;
   justify-content: space-between;
   width: 90%;
-  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
 
@@ -1432,9 +1424,7 @@ button {
 
 .banner-grid {
   width: 100%;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
   padding-top: 25px;
   margin-left: -15px;
@@ -1482,6 +1472,9 @@ button {
   margin-top: -28px;
   margin-left: -33px;
   font-size: 0;
+  -webkit-transition: all 0.5s ease 0s;
+  -moz-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
   transition: all 0.5s ease 0s;
 }
 .owl-prev:hover, .owl-next:hover {
@@ -1522,6 +1515,10 @@ button {
   margin-left: -33px;
   left: auto !important;
   margin-left: 0 !important;
+  -moz-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
   transform: rotate(180deg);
   filter: progid:DXImageTransform.Microsoft.Matrix(M11=$m11, M12=$m12,M21=$m21, M22=$m22, sizingMethod='auto expand');
   zoom: 1;
@@ -1549,9 +1546,7 @@ button {
 }
 
 .grid-elems-4 {
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: justify;
   justify-content: space-between;
   font-size: 17px;
   line-height: 1.7em;
@@ -1580,9 +1575,7 @@ button {
 }
 
 .section-item-grid {
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 
@@ -1663,6 +1656,7 @@ button {
 .mission:before {
   content: "";
   background: url("../images/mission.png") no-repeat center center;
+  -webkit-background-size: contain;
   background-size: contain;
   width: 493px;
   height: 561px;
@@ -1827,9 +1821,7 @@ button.accordion.active, button.accordion:hover {
 }
 
 .grid {
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 
@@ -1844,9 +1836,7 @@ button.accordion.active, button.accordion:hover {
 }
 
 .presentation-item {
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -1955,7 +1945,6 @@ button.accordion.active, button.accordion:hover {
 }
 
 .main-header__menu-button {
-  -ms-flex-preferred-size: 180px;
   flex-basis: 180px;
   text-align: right;
 }
@@ -1970,6 +1959,9 @@ button.accordion.active, button.accordion:hover {
   background-color: rgba(0, 0, 0, 0.5);
   opacity: 0;
   visibility: hidden;
+  -webkit-transition: all 0.5s ease 0s;
+  -moz-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
   transition: all 0.5s ease 0s;
 }
 .overlay-site.open {
@@ -1987,7 +1979,6 @@ button.accordion.active, button.accordion:hover {
 
 @media screen and (max-width: 991px) {
   .main-header__logo {
-    -ms-flex-preferred-size: 180px;
     flex-basis: 180px;
   }
 
@@ -2017,6 +2008,9 @@ button.accordion.active, button.accordion:hover {
     position: fixed;
     z-index: 300;
     overflow: auto;
+    -webkit-transition: all 0.5s ease 0s;
+    -moz-transition: all 0.5s ease 0s;
+    -o-transition: all 0.5s ease 0s;
     transition: all 0.5s ease 0s;
   }
   .mobile-menu.open {
@@ -2075,6 +2069,20 @@ button.accordion.active, button.accordion:hover {
     display: none;
   }
 }
+@media screen and (max-width: 1130px) {
+  .footer-grid__wrapper-left {
+    max-width: 100%;
+    margin-bottom: 35px;
+  }
+
+  .footer-item__list {
+    text-align: right;
+  }
+
+  .footer-grid__wrapper-right {
+    margin: auto;
+  }
+}
 @media screen and (max-width: 991px) {
   .owl-nav .owl-next {
     right: 5px !important;
@@ -2085,7 +2093,6 @@ button.accordion.active, button.accordion:hover {
   }
 
   .news-grid {
-    -ms-flex-pack: center;
     justify-content: center;
   }
 
@@ -2251,9 +2258,7 @@ button.accordion.active, button.accordion:hover {
 }
 @media screen and (max-width: 767px) {
   .grid_presentation {
-    -ms-flex-direction: column;
     flex-direction: column;
-    -ms-flex-align: center;
     align-items: center;
   }
   .grid_presentation .grid__item {
@@ -2295,11 +2300,8 @@ button.accordion.active, button.accordion:hover {
   }
 
   .section-grid {
-    -ms-flex-direction: column;
     flex-direction: column;
-    -ms-flex-align: center;
     align-items: center;
-    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
   }
 
@@ -2332,7 +2334,6 @@ button.accordion.active, button.accordion:hover {
   }
 
   .form-request__inputs {
-    -ms-flex-direction: column;
     flex-direction: column;
   }
 
@@ -2345,13 +2346,9 @@ button.accordion.active, button.accordion:hover {
   }
 
   .review-slider__content {
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-direction: column;
     flex-direction: column;
-    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    -ms-flex-align: center;
     align-items: center;
     padding: 0;
   }
@@ -2363,13 +2360,9 @@ button.accordion.active, button.accordion:hover {
 
   .news-grid__item {
     width: 100%;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-direction: column;
     flex-direction: column;
-    -ms-flex-pack: center;
     justify-content: center;
-    -ms-flex-align: center;
     align-items: center;
   }
 
@@ -2393,9 +2386,7 @@ button.accordion.active, button.accordion:hover {
   }
 
   .social {
-    -ms-flex-direction: column;
     flex-direction: column;
-    -ms-flex-align: center;
     align-items: center;
   }
 
@@ -2432,7 +2423,6 @@ button.accordion.active, button.accordion:hover {
   }
 
   .instagram-item {
-    -ms-flex-align: center;
     align-items: center;
   }
 
@@ -2454,9 +2444,7 @@ button.accordion.active, button.accordion:hover {
   }
 
   .footer-grid {
-    -ms-flex-direction: column;
     flex-direction: column;
-    -ms-flex-align: center;
     align-items: center;
   }
 
@@ -2485,7 +2473,6 @@ button.accordion.active, button.accordion:hover {
   }
 
   .grid_elems-2 {
-    -ms-flex-direction: column;
     flex-direction: column;
   }
   .grid_elems-2 .grid__item {
@@ -2493,9 +2480,7 @@ button.accordion.active, button.accordion:hover {
   }
 
   .section-item-grid {
-    -ms-flex-direction: column;
     flex-direction: column;
-    -ms-flex-align: center;
     align-items: center;
   }
 
@@ -2518,6 +2503,38 @@ button.accordion.active, button.accordion:hover {
     font-size: 18px;
   }
 }
+@media screen and (max-width: 600px) {
+  .footer-grid__wrapper-left {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-grid__item-address {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 35px;
+  }
+
+  .footer-grid__item-links {
+    width: 100%;
+    margin-bottom: 35px;
+  }
+
+  .footer-grid__item-social {
+    width: 100%;
+  }
+
+  .footer-item__list {
+    text-align: center;
+    float: none;
+  }
+
+  .footer-item-phones-grid {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 @media screen and (max-width: 525px) {
   .why-korea__content {
     width: 100%;
@@ -2525,9 +2542,7 @@ button.accordion.active, button.accordion:hover {
   }
 
   .list-advantage__item {
-    -ms-flex-direction: column;
     flex-direction: column;
-    -ms-flex-pack: center;
     justify-content: center;
   }
 
@@ -2537,9 +2552,7 @@ button.accordion.active, button.accordion:hover {
 }
 @media screen and (max-width: 500px) {
   .review-slider__header {
-    -ms-flex-direction: column;
     flex-direction: column;
-    -ms-flex-align: center;
     align-items: center;
   }
 
