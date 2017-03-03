@@ -1643,6 +1643,14 @@ button {
   left: 0;
 }
 
+.jspTrack {
+  background-color: #ffa6a9;
+}
+
+.jspDrag {
+  background-color: #fe595f;
+}
+
 button.accordion {
   background-color: #eee;
   color: #444;
@@ -1678,12 +1686,17 @@ button.accordion.active, button.accordion:hover {
   text-align: center;
 }
 
-.table, table {
-  display: table;
+.table-scroll {
   width: 100%;
+  overflow-y: visible;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+}
+
+.table, table {
+  width: 100%;
+  display: table;
   line-height: 1.2em;
-  margin-bottom: 35px;
-  overflow-y: auto;
 }
 .table strong, table strong {
   font-size: 20px;

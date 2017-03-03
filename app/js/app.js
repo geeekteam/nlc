@@ -253,49 +253,11 @@
         // Do not use jQuery here cause external libs do not loads here...
 
         app.initSwitcher(); // data-switcher="{target='anything'}" , data-switcher-target="anything"
-
-        $(".js-toggle-menu").click(function(){
-            $(".js-mobile-menu").addClass("open");
-            $(".js-overlay").addClass("open");
-        });
-
-        $(".js-overlay").click(function(){
-            $(".js-mobile-menu").removeClass("open");
-            $(".js-overlay").removeClass("open");
-        });
-
-
-        $(".js-dropmenu-button").click(function(e){
-            e.preventDefault();
-
-            var thisItem = $(this).closest(".js-dropmenu-item ");
-
-            thisItem.find(".js-dropmenu-content").slideToggle(400);
-
-        });
-
-        $(".js-accordion-toggle").click(function(){
-            var accordion = $(this).closest(".js-accordion"),
-                thisItem = $(this).closest('.js-accordion-item'),
-                allItems = accordion.find('.js-accordion-item'),
-                allContent = accordion.find('.js-accordion-content'),
-                thisContent = thisItem.find(".js-accordion-content");
-
-
-            if (thisItem.hasClass('open')) {
-                allContent.stop().slideUp(400);
-                thisItem.removeClass("open");
-
-            } else {
-                allContent.stop().slideUp(400);
-                thisContent.stop().slideDown(400);
-                allItems.removeClass("open");
-                thisItem.addClass("open");
-            }
-        });
     });
 
+
     app.appLoad('full', function (e) {
+
         $('.main-slider').owlCarousel({
             loop: true,
             items: 1,
@@ -331,6 +293,75 @@
             items: 1
         });
 
-    });
+        $(".js-toggle-menu").click(function(){
+            $(".js-mobile-menu").addClass("open");
+            $(".js-overlay").addClass("open");
+        });
 
+        $(".js-overlay").click(function(){
+            $(".js-mobile-menu").removeClass("open");
+            $(".js-overlay").removeClass("open");
+        });
+
+
+        $(".js-dropmenu-button").click(function(e){
+            e.preventDefault();
+
+            var thisItem = $(this).closest(".js-dropmenu-item ");
+
+            thisItem.find(".js-dropmenu-content").slideToggle(400);
+
+        });
+
+        $(".js-accordion-toggle").click(function(){
+            var accordion = $(this).closest(".js-accordion"),
+                thisItem = $(this).closest('.js-accordion-item'),
+                allItems = accordion.find('.js-accordion-item'),
+                allContent = accordion.find('.js-accordion-content'),
+                thisContent = thisItem.find(".js-accordion-content"),
+                tableScroll = thisContent.find('.table-scroll'),
+                jsScroll = tableScroll.find('.js-scroll'),
+                accordionAnimationDuration = 400;
+
+            if (thisItem.hasClass('open')) {
+                allContent.stop().slideUp(accordionAnimationDuration);
+                thisItem.removeClass("open");
+                setTimeout(function () {
+                    jsScroll.data().jsp.destroy();
+                }, accordionAnimationDuration);
+
+
+            } else {
+                allContent.stop().slideUp(accordionAnimationDuration);
+                thisContent.stop().slideDown(accordionAnimationDuration);
+                allItems.removeClass("open");
+                thisItem.addClass("open");
+                setTimeout(function () {
+                    tableScroll.css('height', thisContent.find('table').outerHeight());
+                    jsScroll.jScrollPane({autoReinitialise: true});
+                }, accordionAnimationDuration);
+
+            }
+        });
+
+        $('.st-accordion__header').on('shown.bs.collapse', function (e) {
+            var offset = $('.panel.panel-default > .panel-collapse.in').offset();
+            if(offset) {
+                $('html,body').animate({
+                    scrollTop: $('.panel-title a').offset().top -20
+                }, 500);
+            }
+        });
+
+        $( ".js-accordion" ).accordion({
+            heightStyle: "content",
+            active: false,
+            activate: function( event, ui ) {
+                if(!$.isEmptyObject(ui.newHeader.offset())) {
+                    $('html:not(:animated), body:not(:animated)').animate({ scrollTop: ui.newHeader.offset().top }, 'slow');
+                }
+            }
+        });
+
+    });
 })();
