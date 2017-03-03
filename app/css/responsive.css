@@ -1,23 +1,23 @@
 /*
 Error: Undefined mixin 'sprite'.
-        on line 242 of D:/dev/nlc/app/sass/responsive.sass, in `sprite'
-        from line 242 of D:/dev/nlc/app/sass/responsive.sass
+        on line 245 of D:/dev/nlc/app/sass/responsive.sass, in `sprite'
+        from line 245 of D:/dev/nlc/app/sass/responsive.sass
 
-237: 	.section-grid__item
-238: 		margin-bottom: 80px
-239: 		&:last-child
-240: 			margin-bottom: 0
-241: 		&::before
-242: 			+sprite(icon-narrow-bottom)
-243: 			top: 110%
-244: 			right: 45%
-245: 
-246: 	.main-slider__content
-247: 		padding: 31px 15px
+240: 	.section-grid__item
+241: 		margin-bottom: 80px
+242: 		&:last-child
+243: 			margin-bottom: 0
+244: 		&::before
+245: 			+sprite(icon-narrow-bottom)
+246: 			top: 110%
+247: 			right: 45%
+248: 
+249: 	.main-slider__content
+250: 		padding: 31px 15px
 
 Backtrace:
-D:/dev/nlc/app/sass/responsive.sass:242:in `sprite'
-D:/dev/nlc/app/sass/responsive.sass:242
+D:/dev/nlc/app/sass/responsive.sass:245:in `sprite'
+D:/dev/nlc/app/sass/responsive.sass:245
 C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:351:in `block in visit_mixin'
 C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/stack.rb:98:in `block in with_mixin'
 C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
@@ -97,4 +97,4 @@ C:/Ruby23-x64/bin/compass:23:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'sprite'.\A         on line 242 of D:/dev/nlc/app/sass/responsive.sass, in `sprite'\A         from line 242 of D:/dev/nlc/app/sass/responsive.sass\A \A 237: 	.section-grid__item\A 238: 		margin-bottom: 80px\A 239: 		&:last-child\A 240: 			margin-bottom: 0\A 241: 		&::before\A 242: 			+sprite(icon-narrow-bottom)\A 243: 			top: 110%\A 244: 			right: 45%\A 245: \A 246: 	.main-slider__content\A 247: 		padding: 31px 15px"; }
+  content: "Error: Undefined mixin 'sprite'.\A         on line 245 of D:/dev/nlc/app/sass/responsive.sass, in `sprite'\A         from line 245 of D:/dev/nlc/app/sass/responsive.sass\A \A 240: 	.section-grid__item\A 241: 		margin-bottom: 80px\A 242: 		&:last-child\A 243: 			margin-bottom: 0\A 244: 		&::before\A 245: 			+sprite(icon-narrow-bottom)\A 246: 			top: 110%\A 247: 			right: 45%\A 248: \A 249: 	.main-slider__content\A 250: 		padding: 31px 15px"; }
