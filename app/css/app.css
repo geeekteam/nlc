@@ -1377,8 +1377,12 @@ button {
   flex-wrap: wrap;
 }
 
-.footer-item-phones-grid__item {
-  width: 49%;
+.footer-item-phones-grid__phone-title {
+  width: 30%;
+}
+
+.footer-item-phones-grid__phones {
+  width: 70%;
 }
 
 .footer-item-phones__text {
