@@ -619,6 +619,29 @@ button
     text-align: center
     margin-bottom: 55px
 
+.review-slider
+    .owl-dots
+        position: absolute
+        width: 100%
+        left: 0
+        text-align: center
+    .owl-dot
+        display: inline-block
+        vertical-align: middle
+        margin: 0 4px
+        width: 13px
+        height: 13px
+        border-radius: 50%
+        +trans()
+        background-color: #fff
+        border: 3px solid #fff
+        &:hover
+            background-color: #1bb603
+            border-color: #fff
+        &.active
+            background-color: #1bb603
+            border-color: #1bb603
+
 .review-slider__content
     position: relative
     padding-left: 200px
@@ -668,17 +691,42 @@ button
     font-size: 18px
     line-height: 1.7em
 
+.say-about
+    .owl-dots
+        position: absolute
+        width: 100%
+        left: 0
+        text-align: center
+    .owl-dot
+        display: inline-block
+        vertical-align: middle
+        margin: 0 4px
+        width: 13px
+        height: 13px
+        border-radius: 50%
+        +trans()
+        background-color: #fff
+        border: 3px solid #fff
+        &:hover
+            background-color: #1bb603
+            border-color: #fff
+        &.active
+            background-color: #1bb603
+            border-color: #1bb603
+
 .say-about-grid
     display: flex
     flex-wrap: wrap
-    margin-top: -40px
-    margin-left: -43px
+    justify-content: space-between
+    margin-bottom: -45px
 
 .say-about-grid__item
-    padding: 40px 0 0 43px
+    width: 45%
+    margin-bottom: 45px
 
 .say-about-grid__image
-    width: 100%
+    width: 100% !important
+
 
 .news-grid
     display: flex
@@ -788,14 +836,13 @@ button
 .instagram-grid
     display: flex
     flex-wrap: wrap
+    justify-content: space-between
     width: 100%
-    margin-top: -40px
-    margin-left: -45px
+    margin-bottom: -40px
 
 .instagram-grid__item
-    width: 50%
-    padding-top: 40px
-    padding-left: 45px
+    width: 45%
+    margin-bottom: 40px
     text-decoration: none
 
 .social__title
@@ -858,20 +905,42 @@ button
     justify-content: space-between
     flex-wrap: wrap
 
-.footer-grid__item
-    width: 33.3%
+.footer-grid__wrapper-left
+    width: 785px
+    display: flex
+    justify-content: space-between
+
+.footer-grid__wrapper-right
+    width: 310px
 
 .footer-item
     font-size: 16px
     line-height: 1.7em
 
-.footer-item__address
-    padding-bottom: 10px
+.footer-item__list
+    float: right
+    list-style-type: none
 
-.footer-grid__item
+.footer-grid__item-address
     color: #FFFFFF
-    width: 285px
-    margin-bottom: -10px
+    width: 50%
+
+.footer-grid__item-links
+    color: #FFFFFF
+    width: 50%
+
+.footer-grid__item-social
+    color: #FFFFFF
+    width: 100%
+
+.footer-item-phones-grid
+    display: flex
+    justify-content: space-between
+    width: 90%
+    flex-wrap: wrap
+
+.footer-item-phones-grid__item
+    width: 49%
 
 .footer-item-phones__text
     float: left
@@ -884,6 +953,9 @@ button
 .footer-item__social
     text-align: center
     line-height: 1.7em
+
+.footer-item__social-icons
+    margin: 0 5px
 
 .footer-item__wrapper
     line-height: 1.7em

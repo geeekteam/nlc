@@ -261,6 +261,7 @@
         $('.main-slider').owlCarousel({
             loop: true,
             items: 1,
+            dots: 1,
             responsive : {
                 0 : {
                     nav: false
@@ -276,6 +277,7 @@
             nav: true,
             loop: true,
             items: 1,
+            dots: 1,
             responsive : {
                 0 : {
                     nav: false
@@ -283,14 +285,22 @@
                 900 : {
                     nav: true
                 }
-
             }
         });
 
         $('.say-about').owlCarousel({
             nav: true,
             loop: true,
-            items: 1
+            items: 1,
+            dots: 1,
+            responsive : {
+                0: {
+                    nav: false
+                },
+                900: {
+                    nav: true
+                }
+            }
         });
 
         $(".js-toggle-menu").click(function(){
@@ -313,7 +323,7 @@
 
         });
 
-        $(".js-accordion-toggle").click(function(){
+        $(".js-accordion-toggle").click(function(e){
             var accordion = $(this).closest(".js-accordion"),
                 thisItem = $(this).closest('.js-accordion-item'),
                 allItems = accordion.find('.js-accordion-item'),
@@ -326,42 +336,33 @@
             if (thisItem.hasClass('open')) {
                 allContent.stop().slideUp(accordionAnimationDuration);
                 thisItem.removeClass("open");
-                setTimeout(function () {
-                    jsScroll.data().jsp.destroy();
-                }, accordionAnimationDuration);
-
+                console.log(accordion);
+                if(tableScroll.length > 0) {
+                    setTimeout(function () {
+                        jsScroll.data().jsp.destroy();
+                    }, accordionAnimationDuration);
+                }
 
             } else {
                 allContent.stop().slideUp(accordionAnimationDuration);
                 thisContent.stop().slideDown(accordionAnimationDuration);
                 allItems.removeClass("open");
                 thisItem.addClass("open");
-                setTimeout(function () {
-                    tableScroll.css('height', thisContent.find('table').outerHeight());
-                    jsScroll.jScrollPane({autoReinitialise: true});
-                }, accordionAnimationDuration);
-
-            }
-        });
-
-        $('.st-accordion__header').on('shown.bs.collapse', function (e) {
-            var offset = $('.panel.panel-default > .panel-collapse.in').offset();
-            if(offset) {
-                $('html,body').animate({
-                    scrollTop: $('.panel-title a').offset().top -20
-                }, 500);
-            }
-        });
-
-        $( ".js-accordion" ).accordion({
-            heightStyle: "content",
-            active: false,
-            activate: function( event, ui ) {
-                if(!$.isEmptyObject(ui.newHeader.offset())) {
-                    $('html:not(:animated), body:not(:animated)').animate({ scrollTop: ui.newHeader.offset().top }, 'slow');
+                if(tableScroll .length > 0) {
+                    setTimeout(function () {
+                        tableScroll.css('height', thisContent.find('table').outerHeight());
+                        jsScroll.jScrollPane({autoReinitialise: true});
+                    }, accordionAnimationDuration);
                 }
             }
         });
 
+        $('.js-accordion-item').click(function (e) {
+           var item = $(this);
+
+            $('html, body').animate({
+               scrollTop: item.offset().top
+            }, 600);
+        });
     });
 })();

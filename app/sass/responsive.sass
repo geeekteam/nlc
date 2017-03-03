@@ -13,12 +13,20 @@
 	.tab-display-none
 		display: none
 
-
-	.owl-prev, .owl-next
-		+sprite(mobile-nav, '', 'abs_middle')
-
-
 @media screen and (max-width: 991px)
+
+	.owl-nav .owl-next
+		right: 5px !important
+
+	.owl-nav .owl-prev
+		left: 5px !important
+
+	.news-grid
+		justify-content: center
+
+	.news-grid__item
+		width: 100%
+		max-width: 500px
 
 	.tab-fz40
 	font-size: 40px
@@ -51,7 +59,7 @@
 		padding: 30px 0
 
 	.main-slider__content
-		padding: 62px 140px
+		padding: 62px 40px
 		max-width: 100%
 
 	.why-korea__title
@@ -164,7 +172,6 @@
 	.presentation-item
 		width: 220px
 
-
 	.st-content
 		font-size: 14px
 
@@ -189,11 +196,13 @@
 		flex-wrap: wrap
 
 	.section-grid__item
-		margin-bottom: 15px
+		margin-bottom: 80px
 		&:last-child
 			margin-bottom: 0
 		&::before
-			display: none
+			+sprite(icon-narrow-bottom)
+			top: 110%
+			right: 45%
 
 	.main-slider__content
 		padding: 31px 15px
