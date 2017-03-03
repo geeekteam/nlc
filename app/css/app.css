@@ -1311,7 +1311,7 @@ button {
 }
 
 .facebook__item {
-  align-self: center;
+  text-align: center;
 }
 
 .facebook__image {
@@ -1757,43 +1757,25 @@ button {
   display: flex;
 }
 
+.pagination-items__item, .pagination__next, .pagination__prev {
+  text-align: center;
+  border: 1px solid #cac9c9;
+  height: 35px;
+  padding: 7px 0;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.pagination-items__item:hover, .pagination__next:hover, .pagination__prev:hover {
+  background-color: #e3f7ff;
+}
+
 .pagination-items__item {
   width: 12.5%;
-  text-align: center;
-  border: 1px solid #cac9c9;
   border-left: none;
-  height: 35px;
-  padding: 7px 0;
-  cursor: pointer;
-}
-.pagination-items__item:hover {
-  background-color: #e3f7ff;
 }
 
-.pagination__next {
+.pagination__next, .pagination__prev {
   width: 15%;
-  text-align: center;
-  border: 1px solid #cac9c9;
-  height: 35px;
-  padding: 7px 0;
-  border-left: none;
-  cursor: pointer;
-}
-.pagination__next:hover {
-  background-color: #e3f7ff;
-}
-
-.pagination__prev {
-  color: #cac9c9;
-  width: 15%;
-  text-align: center;
-  border: 1px solid #cac9c9;
-  height: 35px;
-  padding: 7px 0;
-  cursor: pointer;
-}
-.pagination__prev:hover {
-  background-color: #e3f7ff;
 }
 
 button.accordion {
@@ -2139,6 +2121,37 @@ button.accordion.active, button.accordion:hover {
   .footer-grid__wrapper-right {
     margin: auto;
   }
+
+  .social {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .social__instagram {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .social__facebook {
+    width: 100%;
+  }
+
+  .instagram-grid {
+    justify-content: center;
+    margin-top: 0;
+    margin-left: 0;
+  }
+
+  .instagram-grid__item {
+    width: 50%;
+    padding-top: 0;
+    padding-left: 0;
+    margin-bottom: 25px;
+    align-items: center;
+  }
+  .instagram-grid__item:last-child {
+    margin-bottom: 0;
+  }
 }
 @media screen and (max-width: 991px) {
   .owl-nav .owl-next {
@@ -2442,33 +2455,9 @@ button.accordion.active, button.accordion:hover {
     margin-bottom: 10px;
   }
 
-  .social {
+  .instagram-grid {
     flex-direction: column;
     align-items: center;
-  }
-
-  .social__instagram {
-    width: 100%;
-    margin-bottom: 30px;
-  }
-
-  .social__facebook {
-    width: 100%;
-  }
-
-  .instagram-grid {
-    margin-top: 0;
-    margin-left: 0;
-  }
-
-  .instagram-grid__item {
-    width: 100%;
-    padding-top: 0;
-    padding-left: 0;
-    margin-bottom: 25px;
-  }
-  .instagram-grid__item:last-child {
-    margin-bottom: 0;
   }
 
   .social__title {

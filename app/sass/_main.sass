@@ -898,7 +898,7 @@ button
     line-height: 1.7em
 
 .facebook__item
-    align-self: center
+    text-align: center
 
 .facebook__image
     max-width: 308px
@@ -1220,35 +1220,21 @@ button
     width: 70%
     display: flex
 
+.pagination-items__item, .pagination__next, .pagination__prev
+    text-align: center
+    border: 1px solid #cac9c9
+    height: 35px
+    padding: 7px 0
+    cursor: pointer
+    transition: all 0.2s
+    &:hover
+        background-color: #e3f7ff
+
+
 .pagination-items__item
     width: 12.5%
-    text-align: center
-    border: 1px solid #cac9c9
     border-left: none
-    height: 35px
-    padding: 7px 0
-    cursor: pointer
-    &:hover
-        background-color: #e3f7ff
 
-.pagination__next
-    width: 15%
-    text-align: center
-    border: 1px solid #cac9c9
-    height: 35px
-    padding: 7px 0
-    border-left: none
-    cursor: pointer
-    &:hover
-        background-color: #e3f7ff
 
-.pagination__prev
-    color: #cac9c9
+.pagination__next, .pagination__prev
     width: 15%
-    text-align: center
-    border: 1px solid #cac9c9
-    height: 35px
-    padding: 7px 0
-    cursor: pointer
-    &:hover
-        background-color: #e3f7ff
