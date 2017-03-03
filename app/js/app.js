@@ -331,38 +331,38 @@
                 thisContent = thisItem.find(".js-accordion-content"),
                 tableScroll = thisContent.find('.table-scroll'),
                 jsScroll = tableScroll.find('.js-scroll'),
-                accordionAnimationDuration = 400;
+                accordionAnimationDuration = 300;
 
             if (thisItem.hasClass('open')) {
                 allContent.stop().slideUp(accordionAnimationDuration);
                 thisItem.removeClass("open");
-                console.log(accordion);
                 if(tableScroll.length > 0) {
                     setTimeout(function () {
                         jsScroll.data().jsp.destroy();
                     }, accordionAnimationDuration);
                 }
-
             } else {
                 allContent.stop().slideUp(accordionAnimationDuration);
                 thisContent.stop().slideDown(accordionAnimationDuration);
                 allItems.removeClass("open");
                 thisItem.addClass("open");
-                if(tableScroll .length > 0) {
+                if(tableScroll.length > 0) {
+                    jsScroll.jScrollPane({autoReinitialise: true});
                     setTimeout(function () {
                         tableScroll.css('height', thisContent.find('table').outerHeight());
                         jsScroll.jScrollPane({autoReinitialise: true});
                     }, accordionAnimationDuration);
                 }
+
             }
         });
-
         $('.js-accordion-item').click(function (e) {
-           var item = $(this);
-
-            $('html, body').animate({
-               scrollTop: item.offset().top
-            }, 600);
+            var item = $(this);
+            setTimeout(function () {
+                $('html, body').animate({
+                    scrollTop: item.offset().top
+                }, 300);
+            }, 300);
         });
     });
 })();
