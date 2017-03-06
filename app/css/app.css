@@ -1834,8 +1834,8 @@ button {
   width: 25%;
 }
 .footer .grid__item_links {
-  width: 25%;
   margin-left: 150px;
+  width: 25%;
 }
 .footer .grid__item_social {
   width: 15%;
@@ -1850,8 +1850,8 @@ button {
   margin-bottom: 10px;
 }
 .footer .footer__social {
-  text-align: right;
   margin-bottom: 15px;
+  text-align: right;
 }
 .footer .footer-contacts a {
   text-decoration: none;
