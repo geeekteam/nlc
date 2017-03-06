@@ -1818,8 +1818,17 @@ button {
   width: 15%;
 }
 
-.footer .grid__item {
+.footer .grid__item, .footer .grid_elems-2, .footer .grid_elems-3 {
   font-size: 16px;
+}
+.footer .grid_elems-2 {
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+}
+.footer .grid_elems-2 .grid__item {
+  width: auto;
 }
 .footer .grid__item_address {
   width: 25%;
@@ -1830,21 +1839,6 @@ button {
 }
 .footer .grid__item_social {
   width: 15%;
-}
-.footer a:hover {
-  color: #999;
-}
-.footer p {
-  line-height: 1.5em;
-}
-.footer .grid_footer-contacts {
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-  -ms-flex-align: baseline;
-  align-items: baseline;
-}
-.footer .footer-contacts a {
-  text-decoration: none;
 }
 .footer .grid__item_social {
   text-align: center;
@@ -1858,6 +1852,15 @@ button {
 .footer .footer__social {
   text-align: right;
   margin-bottom: 15px;
+}
+.footer .footer-contacts a {
+  text-decoration: none;
+}
+.footer a:hover {
+  color: #999;
+}
+.footer p, .footer a {
+  line-height: 1.5em;
 }
 
 button.accordion {

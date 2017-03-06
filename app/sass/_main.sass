@@ -1262,8 +1262,15 @@ button
     width: 15%
 
 .footer
-    .grid__item
+
+    .grid__item, .grid_elems-2, .grid_elems-3
         font-size: 16px
+
+    .grid_elems-2
+        justify-content: flex-start
+        align-items: baseline
+        .grid__item
+            width: auto
 
     .grid__item_address
         width: 25%
@@ -1274,21 +1281,6 @@ button
 
     .grid__item_social
         width: 15%
-
-    a
-        &:hover
-            color: #999
-
-    p
-        line-height: 1.5em
-
-    .grid_footer-contacts
-        justify-content: flex-start
-        align-items: baseline
-
-    .footer-contacts
-        a
-            text-decoration: none
 
     .grid__item_social
         text-align: center
@@ -1302,3 +1294,14 @@ button
     .footer__social
         text-align: right
         margin-bottom: 15px
+
+    .footer-contacts
+        a
+            text-decoration: none
+
+    a
+        &:hover
+            color: #999
+
+    p, a
+        line-height: 1.5em
